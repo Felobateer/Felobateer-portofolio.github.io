@@ -1,0 +1,156 @@
+#shop {
+  position: relative;
+  margin-top: 20px;
+  padding: 2%;
+}
+
+.filters {
+  position: sticky;
+  background-color: #d2691e;
+  color: White;
+  height: 75vh;
+}
+
+.categories,
+.size,
+.discount,
+.prices {
+  border-bottom: 2px white solid;
+  margin-top: 7px;
+  padding-top: 3px;
+  margin-bottom: 12px;
+}
+
+.filter {
+  border-bottom: 5px linear-gradient(to bottom, white, chocolate) solid;
+  width: 100%;
+  padding: 7px;
+  border-radius: 12px;
+}
+
+.filter:hover {
+  background-color: #cf8a58;
+}
+
+.prices {
+  border-bottom: none;
+}
+
+.prices input {
+  width: 25%;
+  border-bottom: none;
+}
+
+@media (max-width: 1200px) {
+  .filters {
+    width: 25%;
+  }
+  .items {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .filters {
+    display: none;
+  }
+
+  .items {
+    width: 100%;
+  }
+}
+
+.items {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.item {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  width: 250px;
+  height: 30vh;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  border-radius: 5px;
+}
+
+.Discount {
+  position: absolute;
+  background-color: red;
+  color: white;
+  height: 28px;
+  border-radius: 25%;
+  padding: 2px;
+  margin: 5px;
+}
+
+.itemDescription {
+  display: none;
+}
+
+.item:hover {
+  .itemDescription {
+    display: block;
+    color: white;
+    background: linear-gradient(to bottom, transparent, gray 90%);
+    padding-top: 200px;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 5px;
+  }
+
+  .itemDescription button {
+    float: right;
+    margin-right: 10px;
+  }
+
+  .itemDescription h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+#cartchecklist {
+  width: 90%;
+  margin: 10px;
+  display: inline-block;
+}
+
+.iteminlist {
+  margin-bottom: 15px;
+  border-bottom: 2px rgb(197, 188, 188) solid;
+}
+
+.itemImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+#itemupdate {
+  width: fit-content;
+  margin: 0;
+  float: right;
+}
+
+#itemupdate button {
+  margin: 5px;
+}
+
+#itemsumup {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+#itemsumup span {
+  float: right;
+}
