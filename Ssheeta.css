@@ -231,3 +231,111 @@ nav ul li a:hover {
 #contact div label {
   font-size: 28px;
 }
+
+@media (max-width: 550px) {
+  * {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  #header {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .checkbtn {
+    float: right;
+    margin: 0;
+    right: 5px;
+    width: fit-content;
+    position: absolute;
+  }
+
+  .checkbtn i {
+    width: fit-content;
+  }
+
+  #header ul {
+    height: 45%;
+  }
+
+  #header ul li {
+    overflow: hidden;
+  }
+
+  #about {
+    overflow: hidden;
+    height: 80%;
+  }
+
+  #aboutMe {
+    width: 90%;
+    height: 70%;
+    overflow: hidden;
+  }
+
+  #aboutMe h2 {
+    font-size: 20px;
+  }
+
+  #aboutMe h5 {
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  #Skills {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+  }
+
+  #skillsTitle h1 {
+    font-size: 20px;
+    overflow: hidden;
+  }
+
+  #Skills div div h3 {
+    overflow: hidden;
+    font-size: 16px;
+  }
+
+  #projects {
+    padding-top: 50px;
+    overflow: hidden;
+    height: 200%;
+    width: 100%;
+  }
+
+  #projects h1 {
+    overflow: hidden;
+    font-size: 20px;
+  }
+
+  .project1,
+  .project2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  #pd {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #pv {
+    flex: 1;
+    width: 100%;
+    order: -1;
+  }
+
+  #contact {
+    overflow: hidden;
+    height: 50%;
+  }
+
+  #contact div label {
+    font-size: 16px;
+  }
+}
