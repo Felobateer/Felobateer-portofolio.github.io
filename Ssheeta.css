@@ -245,14 +245,18 @@ nav ul li a:hover {
 
   .checkbtn {
     float: right;
-    margin: 0;
-    right: 5px;
-    width: fit-content;
+    right: 0;
+    width: min-content;
     position: absolute;
+    height: 60px;
   }
 
   .checkbtn i {
-    width: fit-content;
+    position: absolute;
+    display: block;
+    right: -150px;
+    top: 22px;
+    z-index: 1000;
   }
 
   #header ul {
