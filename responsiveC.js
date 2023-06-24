@@ -1,3 +1,3 @@
 goshopping = () => {
-  window.location.href = "./SweetMarkt.html";
+  window.location.href = "./SweetMarketshop.html";
 };
