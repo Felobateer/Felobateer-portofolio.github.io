@@ -2,15 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FSaadalla</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <link href="Ssheeta.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -25,197 +20,177 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-bottom-dark"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid overflow-x-hidden">
-        <h1 class="display-4 text-white font-bold">FS</h1>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse mx-4" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item fs-3">
-              <a class="nav-link text-white" aria-current="page" href="#about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item fs-3">
-              <a class="nav-link text-white" href="#projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav id="header">
+      <input type="checkbox" class="checkbtn" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo text-white text-start">FS</label>
+      <ul>
+        <li>
+          <a class="text-decoration-none text-white" href="#about">About</a>
+        </li>
+        <li>
+          <a class="text-decoration-none text-white" href="#Skills">Skills</a>
+        </li>
+        <li>
+          <a class="text-decoration-none text-white" href="#projects"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a class="text-decoration-none text-white" href="#contact"
+            >Contact Info</a
+          >
+        </li>
+      </ul>
     </nav>
-
     <section id="about">
-      <div
-        class="position-relative container-fluid d-flex flex-row flex-wrap align-items-center"
-      >
-        <input type="checkbox" id="see" />
-        <div class="position-relative" id="fullProfile">
-          <div class="position-absolute" id="profilePic"></div>
-          <div class="container bg-dark" id="profile">
-            <h1 class="text-white fs-3 mx-5">Felobateer Saadalla</h1>
-            <h1 class="text-lightwhitesmoke fs-4 mx-5">Web Developer</h1>
-            <p class="text-whitesmoke fs-5">
-              I am an enthusiastic and committed junior front-end developer with
-              a solid understanding of HTML, CSS, and Javascript. Additionally,
-              I am proficient in two JavaScript frameworks (React and Vue3) and
-              two CSS frameworks (Tailwind and Bootstrap).
-            </p>
-            <label class="fs-5" id="more" for="see">Read more</label>
-            <div id="seeMore">
-              <p class="text-whitesmoke fs-5">
-                I possess some familiarity with jQuery and I am currently
-                expanding my knowledge in Angular and TypeScript. I am eager to
-                utilize my skills and contribute as a professional junior
-                front-end developer within your organization.
-              </p>
-              <label class="fs-5" for="see">Show less</label>
-            </div>
-            <h1 class="fs-4 text-darkwhitesmoke">
-              <span class="fas fa-envelope"></span>
-              Email: felobateersamy01@gmail.com
-            </h1>
-            <h1 class="fs-4 text-darkwhitesmoke">
-              <span class="fas fa-phone"></span>
-              Phone: 0151 101 70902
-            </h1>
-          </div>
+      <div class="intro text-white" id="aboutMe">
+        <h2 class="m-1">Hi, I'm Felobateer and I'm a web developer</h2>
+        <h5 class="m-1">
+          I am a passionate and dedicated junior front-end developer with strong
+          foundation in HTML, CSS, and Javascript, as well as React and
+          bootstrap. I also have some knowledge in jQuery. I am also learning
+          angular and typescript. I am excited to apply my skills at your
+          company.
+        </h5>
+        <button class="CV btn btn-primary m-1">
+          <a href="./Felobateer's Resume.pdf" target="_blank" class="text-white text-decoration-none bg-transparent">Resume
+          </a>
+        </button>
+      </div>
+      <div class="intro photo part-2">
+        <img
+          src="./pic/Picture.jpg"
+          alt="me"
+          class="img-profile rounded-circle shadow small-img"
+        />
+      </div>
+    </section>
+
+    <section class="text-white" id="Skills">
+      <div id="skillsTitle" class="row mb-5">
+        <h1 class="text-center">Skills</h1>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h3 class="text-center">Coding Skills</h3>
+          <button class="btn bg-secondary d-block m-3 btn-block skill-display">
+            HTML
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            CSS
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            Bootstrap
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            jQuery
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            Javascript
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            React
+          </button>
         </div>
-        <div class="position-relative bg-dark" id="skillsection">
-          <h1 class="fs-3 text-center text-white">My Skills</h1>
-          <ul class="d-flex flex-row flex-wrap">
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/html5.png" />
-                <h1 class="fs-5 text-white">HTML 5</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/css3.png" />
-                <h1 class="fs-5 text-white">CSS 3</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/js.png" id="simg" />
-                <h1 class="fs-5 text-white">JavaScript</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/favicon.ico" />
-                <h1 class="fs-5 text-white">React</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/vue.png" />
-                <h1 class="fs-5 text-white">Vue</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/tailwind.png" />
-                <h1 class="fs-5 text-white">Tailwind</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white">
-              <div id="codeSkill">
-                <img src="./icons/bootstrap.png" id="simg" />
-                <h1 class="fs-5 text-white">Bootstrap</h1>
-              </div>
-            </li>
-          </ul>
-          <ul class="d-flex flex-row flex-wrap">
-            <li id="softSkill" class="fs-4 text-white">Fluent in English</li>
-            <li id="softSkill" class="fs-4 text-white">German A2</li>
-            <li id="softSkill" class="fs-4 text-white">Team-player</li>
-            <li id="softSkill" class="fs-4 text-white">Responsible</li>
-            <li id="softSkill" class="fs-4 text-white">Reliable</li>
-            <li id="softSkill" class="fs-4 text-white">Creative</li>
-            <li id="softSkill" class="fs-4 text-white">Hard-worker</li>
-            <li id="softSkill" class="fs-4 text-white">Motivated</li>
-          </ul>
+        <div class="col-6">
+          <h3 class="text-center">Other Skills</h3>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            English Fluent
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            German A2
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            Team-player
+          </button>
+          <button class="btn bg-secondary d-block m-3 skill-display">
+            Responsible
+          </button>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="pt-5">
-      <h1 class="text-center text-white mt-5 mb-5">Projects</h1>
-      <div class="project1 row text-white p-3">
+    <section id="projects">
+      <h1 class="text-center text-white mb-5">Projects</h1>
+      <div class="project1 row text-white">
         <div class="projectDescription col-6 mb-5" id="pd">
           <div class="row">
-            <img
-              id="projectLogo"
-              src="./icons/Gotel-logo.PNG"
-              class="col-6"
-              id="g-img"
-            />
+            <img src="./pic/Gotel-logo.PNG" class="col-6" id="g-img" />
             <h1 class="col-6 text-center">Gotel</h1>
           </div>
 
-          <p class="fs-5 p-4">
+          <p>
             Gotel is a hotel booking website. I made a 2 page website, the
             landing page where I pay close attention to the design and styling
             the page to look nice and up to the standards of a modern business
             website. The second page I focused more making the page responsive.
             Both pages were made using:
           </p>
-          <img id="icon" src="./icons/favicon.ico" />
-          <img id="icon" src="./icons/bootstrap.png" />
+          <i class="fab fa-react"></i>
+          <span>Bootstrap</span>
         </div>
         <div class="projectView col-6" id="pv">
-          <a href="./Gotel/Gotel.html">
-            <img id="projectPreview" src="./icons/gotel.PNG" />
+          <a href="./gotel.html">
+            <img src="./pic/gotel.PNG" />
           </a>
         </div>
       </div>
-      <div class="project2 row text-white p-3">
-        <div class="projectDescription col-6" id="pd">
+      <div class="project2 row text-white">
+        <div class="projectDescription col-6"  id="pd">
           <div class="row">
-            <img
-              id="projectLogo2"
-              src="./icons/sweetmarket-logo.PNG"
-              class="col-6"
-              id="sm-img"
-            />
-            <h1 class="col-6 text-center mt-5">Sweet Market</h1>
+            <img src="./pic/sweetmarket-logo.PNG" class="col-6" id="sm-img" />
+            <h1 class="col-6 text-center">Sweet Market</h1>
           </div>
-          <p class="fs-5 p-4">
+          <p>
             Sweet Market is a shopping website based on my personal preference
-            of sweets. This website is a 5 page website: landing, about, shop,
-            registeration and cart page. For this website, I made a multiple
-            page website with functions like logging in, adding to cart, and
-            routing. I used for this website:
+            of sweets. This website is a 4 page website: the landing page, the
+            landing page after the user logs in, about page, and page with the
+            items on sell. The project includes a login function and a shopping
+            cart. I used for this website:
           </p>
-          <img id="icon" src="./icons/vue.png" />
-          <img id="icon" src="./icons/tailwind.png" />
+          <i class="fab fa-react"></i>
+          <span>Bootstrap</span>
         </div>
         <div class="projectView col-6" id="pv">
-          <a href="./SM/SweetMarket.html">
-            <img id="projectPreview" src="./icons/sm.PNG" />
+          <a href="./SweetMarketmain.html">
+            <img src="./pic/sweetmarket.PNG" />
           </a>
         </div>
       </div>
     </section>
+
+    <section id="contact">
+      <div class="col text-start text-white">
+        <label>email: Felobateersamy01@gmail.com</label>
+        <label>Phone: +49 151 101 70902</label>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $(".intro").css("display", "inline-block");
+        $(".CV").addClass("animate__animated animate__shakeX");
+        setTimeout(function () {
+          $("#shakeButton").removeClass("animate__animated animate__shakeX");
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
