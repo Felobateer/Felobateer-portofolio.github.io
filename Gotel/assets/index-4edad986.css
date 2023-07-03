@@ -1,0 +1,60 @@
+*{margin:0;padding:0;color:#e9e9e9;font-family:Verdana,Geneva,Tahoma,sans-serif;overflow-x:hidden;width:100%}
+#navbar{margin-top:0;padding:5px;border-bottom:2px #b09e80 solid;display:flex;flex-direction:row;background-color:#192537}
+body,#navbar #offcanvasRight{background-color:#192537}
+#navbar img{margin-left:10px;margin-top:15px;width:fit-content}
+#navbar button{width:fit-content;height:fit-content;margin:auto 30px auto auto;font-size:24px}
+#navbar nav{margin-left:auto;margin-top:auto;margin-right:50px}
+#navItem{display:flex;flex-direction:column;font-size:24px;text-decoration:none;width:fit-content;margin:20px auto;color:#e9e9e9}
+#navItem:hover{border-bottom:2px #b09e80 solid}
+#slide1{background-image:url(./plan-6c53a4b6.jpg)}
+#slide2{background-image:url(./enjoy-b782185f.jpg)}
+#slide3{background-image:url(./comfort-b681e3ce.jpg)}
+#Slideshow{margin:15px auto auto;width:90%;height:75vh;border-radius:15px}
+@media (max-width: 1200px){#Slideshow{width:100%;border-radius:0;margin:0}}#slide1,#slide2,#slide3{background-repeat:no-repeat;background-size:cover;background-position:center;width:100%;height:75vh}
+#slidetext{background-color:transparent;z-index:100;display:flex;flex-flow:column;margin:auto;width:fit-content;height:fit-content;margin-top:35vh}
+#bookBtn{width:max-content;margin:auto}
+#slide3 #slidetext{color:#fff}
+#slide3 #slidetext span{color:#b09e80}
+#about{margin:70px 7%}
+#aboutText{background-color:#b09e80;color:#000;padding:100px 350px 100px 100px;border-radius:45px}
+#aboutPic{position:absolute;width:80%}
+#touristsPic{width:40%;height:50vh;margin-top:5vh;margin-left:61%;border-radius:30%}
+#aboutText p{color:#000}
+@media (max-width: 1200px){#touristsPic{display:none}#aboutText{padding:30px 75px 30px 30px}#city{display:flex;flex-direction:row}#cityCard{width:40%}}
+#cityCard{margin:20px}
+#cityImg{width:100%;height:35vh}
+#cityText{opacity:0;animation:slideIn 2s ease forwards}
+@keyframes slideIn{0%{opacity:0;transform:translateY(-70px)}to{opacity:1;transform:translateY(0)}}
+#footer{background-color:#b09e80;width:110%;margin-bottom:0;padding-top:5vh;height:35vh;display:flex;flex-direction:row;flex-wrap:nowrap}
+#footerSection{width:300px;margin:25px;padding:10px;height:21vh;overflow:hidden}
+#footerSection button{width:fit-content;float:right}
+#footerSection input{width:200px}
+@media (max-width: 1200px){#footerSection{width:210px}}
+#selectionBar{height:fit-content;width:100%;top:20vh;background:linear-gradient(to bottom right,#b09e80,#192537);padding-top:20px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center}
+#selectionBar div{margin:0 10px}#destination{width:max-content;border-radius:5px}
+#destination button{border:none}#destination input{height:5vh;overflow-y:visible}
+#destination ul li button{color:#192537;padding:7px}.List{position:relative;display:none}
+.Visible{position:relative;display:block;z-index:9999;background-color:#fff;overflow:visible;padding-left:0;border-radius:5px;width:25vh}
+#dateRange{width:fit-content;height:fit-content;border-radius:5px;padding:5px;overflow-x:visible}
+#guests{width:fit-content}
+#guests button{width:max-content;height:5vh;overflow-y:visible}
+.list{position:relative;display:none}
+.visible{position:relative;display:block;z-index:9999;background-color:#fff;overflow:visible;padding-left:0;border-radius:5px;width:25vh}
+#guests ul li{color:#192537;padding:10px 5px 5px}
+#guests ul li div{width:max-content;float:right}
+#price{width:max-content}
+#price label{height:fit-content}
+#price label select{border:none}
+#price label select option{color:#192537}
+#rating{width:max-content}
+#rating label{width:fit-content}
+#rating label select{border:none;width:fit-content}
+#rating label select option{color:#192537}
+#submit{width:fit-content;padding-top:10px}
+@media (max-width: 1400px){#selectionBar{padding-left:5px;border:none;margin-left:5px;justify-content:left}#dateRange{width:350px}#dateRange div{width:175px}#guests{width:250px}}
+#hotels{position:relative;padding-top:300px;padding-bottom:150px;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:right;min-height:10vh;background-color:#192537}
+#hotelCard{width:300px;background-color:#192537;border-radius:5%;margin:10px;padding:10px;position:relative;overflow-y:hidden}
+#hotelCard:hover{box-shadow:inset 0 0 10px #b09e80}
+#hotelCard:hover #cardbutton{animation:btn 1s;bottom:10px;transition:bottom .3s ease}@keyframes btn{0%{bottom:-40px}to{bottom:10px}}
+#cardbutton{position:absolute;right:7px;bottom:-40px;width:fit-content}#cardRating{width:fit-content;margin:10px 5px;color:#b09e80}
+@media (max-width: 550px){#aboutText{width:100%;font-size:16px}#footer{display:flex;flex-direction:row;justify-content:left;overflow:hidden;margin:0}#footerSection{margin:0;padding:0;width:50%;overflow:hidden;flex:1}#footerSection:last-of-type{display:none}#selectionBar{display:flex;flex-wrap:wrap;justify-content:left;height:450px}#destination{width:100%}#destination input{display:none}#destination ul{display:flex;flex-direction:row;flex-wrap:nowrap}#destination ul li button{width:fit-content}#destination ul li button:active{background-color:#192537}#dateRange{margin-left:10px;margin-bottom:10px;height:50px}#guests{align-self:flex-start;height:170px;overflow:hidden}}
