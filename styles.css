@@ -214,3 +214,46 @@ label {
 #projectPreview:hover {
   box-shadow: 0 0 30px white;
 }
+
+@media (max-width: 500px) {
+  #Logo {
+    font-size: 45px;
+  }
+
+  #navbarNav ul li a {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  #profile {
+    width: 60%;
+    margin-right: 35%;
+  }
+
+  #profilePic {
+    left: -2vh;
+    width: 14vh;
+    height: 14vh;
+  }
+
+  #webName {
+    display: none;
+  }
+
+  #projectPreview {
+    margin: 0;
+  }
+
+  #pv {
+    position: relative;
+    align-items: start;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 3vh;
+  }
+
+  #projectPreview {
+    width: 50vh;
+    height: fit-content;
+  }
+}
