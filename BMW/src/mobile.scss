@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
+$font: "Niramit", sans-serif;
+$font2: "Agdasima", sans-serif;
+
+@media (max-width: 1000px) {
+  .intro {
+    nav {
+      border: none;
+      width: 110%;
+      margin: 0;
+      padding: 0;
+      ul {
+        display: none;
+      }
+      div {
+        i {
+          &:nth-child(3) {
+            display: none;
+          }
+          &:last-child {
+            display: inline;
+          }
+        }
+      }
+    }
+    .bmwI5 {
+      p {
+        display: none;
+      }
+      div {
+        margin: auto auto 0 auto;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          text-align: center;
+          &:first-child {
+            font-size: 16px;
+          }
+          &:nth-child(2) {
+            font-size: 120px;
+          }
+        }
+        .i5elec100 {
+          flex-direction: row;
+          align-items: center;
+          width: 80%;
+          div {
+            &:first-child {
+              height: 60px;
+            }
+          }
+          img {
+            margin-bottom: auto;
+          }
+          h1 {
+            text-align: center;
+            font-size: 20px;
+          }
+        }
+        .btns {
+          width: 100%;
+          button {
+            width: 90%;
+            margin: 8px auto;
+          }
+        }
+      }
+    }
+    .shopTheLook {
+      position: absolute;
+      z-index: 15;
+      top: 30%;
+      right: 15px;
+      background: transparent;
+      div {
+        display: none;
+        &:first-child {
+          display: flex;
+          margin: auto;
+          width: 60px;
+          height: 60px;
+          border-radius: 5px;
+          border: 1px black solid;
+          background: white;
+          i {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+
+  .i5Details {
+    width: 100%;
+    p {
+      margin: 35px;
+    }
+  }
+
+  .onlineBuy {
+    h2,
+    h1 {
+      text-align: center;
+      width: 90%;
+    }
+    div {
+      justify-content: right;
+      div {
+        width: 90%;
+        h1 {
+          font-size: 24px;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  .elecOptions,
+  .luxOptions {
+    .shade {
+      div {
+        width: 80%;
+        justify-content: center;
+        margin: auto auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        h1 {
+          font-size: 18px;
+          text-align: center;
+        }
+        p {
+          font-size: 18px;
+          text-align: center;
+          &:last-of-type {
+            font-size: 26px;
+          }
+        }
+        span {
+          font-size: 18px;
+          text-align: center;
+        }
+        button {
+          width: 80%;
+          font-size: 16px;
+          margin: 25px;
+        }
+      }
+    }
+  }
+
+  .enjoy {
+    div {
+      width: 100%;
+    }
+    .serviceInfo {
+      width: 100%;
+      p {
+        &:first-child {
+          font-family: $font;
+        }
+      }
+    }
+  }
+
+  footer {
+    min-height: 70vh;
+    .conAbt {
+      display: none;
+    }
+    .smFooter {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(224, 224, 224, 0.6);
+      height: 60%;
+      .smConAbt {
+        margin: auto;
+        width: 70%;
+        button {
+          background: transparent;
+          border: none;
+          font-weight: bold;
+          font-family: $font;
+          font-size: 16px;
+          margin: 10px 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        li {
+          list-style: none;
+          font-weight: bold;
+          font-family: $font;
+          margin: 10px 10px;
+        }
+      }
+    }
+    .socialMedia {
+      position: absolute;
+      bottom: 25px;
+      left: 50px;
+      width: 100px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .lastPart {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        margin: 10px auto;
+        width: 150px;
+        font-size: $font;
+      }
+      ul {
+        margin: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        li {
+          padding: 5px 11px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .navmenu {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    width: 100%;
+
+    .navmenuTitle {
+      width: 100%;
+      border-bottom: 1px gray solid;
+      padding: 10px 30px;
+      display: flex;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+      div {
+        margin: auto 0;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        i {
+          color: gray;
+          font-size: 18px;
+          font-weight: bold;
+          padding-top: 20px;
+        }
+      }
+    }
+
+    ul {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      margin: 15px auto;
+      li {
+        list-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $font;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
+@media (max-width: 1000px) {
+  .intro nav {
+    border: none;
+    width: 110%;
+    margin: 0;
+    padding: 0;
+  }
+  .intro nav ul {
+    display: none;
+  }
+  .intro nav div i:nth-child(3) {
+    display: none;
+  }
+  .intro nav div i:last-child {
+    display: inline;
+  }
+  .intro .bmwI5 p {
+    display: none;
+  }
+  .intro .bmwI5 div {
+    margin: auto auto 0 auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .intro .bmwI5 div h1 {
+    text-align: center;
+  }
+  .intro .bmwI5 div h1:first-child {
+    font-size: 16px;
+  }
+  .intro .bmwI5 div h1:nth-child(2) {
+    font-size: 120px;
+  }
+  .intro .bmwI5 div .i5elec100 {
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+  }
+  .intro .bmwI5 div .i5elec100 div:first-child {
+    height: 60px;
+  }
+  .intro .bmwI5 div .i5elec100 img {
+    margin-bottom: auto;
+  }
+  .intro .bmwI5 div .i5elec100 h1 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .intro .bmwI5 div .btns {
+    width: 100%;
+  }
+  .intro .bmwI5 div .btns button {
+    width: 90%;
+    margin: 8px auto;
+  }
+  .intro .shopTheLook {
+    position: absolute;
+    z-index: 15;
+    top: 30%;
+    right: 15px;
+    background: transparent;
+  }
+  .intro .shopTheLook div {
+    display: none;
+  }
+  .intro .shopTheLook div:first-child {
+    display: flex;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px black solid;
+    background: white;
+  }
+  .intro .shopTheLook div:first-child i {
+    font-size: 22px;
+  }
+  .i5Details {
+    width: 100%;
+  }
+  .i5Details p {
+    margin: 35px;
+  }
+  .onlineBuy h2,
+  .onlineBuy h1 {
+    text-align: center;
+    width: 90%;
+  }
+  .onlineBuy div {
+    justify-content: right;
+  }
+  .onlineBuy div div {
+    width: 90%;
+  }
+  .onlineBuy div div h1 {
+    font-size: 24px;
+    margin-bottom: 3px;
+  }
+  .elecOptions .shade div,
+  .luxOptions .shade div {
+    width: 80%;
+    justify-content: center;
+    margin: auto auto 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .elecOptions .shade div h1,
+  .luxOptions .shade div h1 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .elecOptions .shade div p,
+  .luxOptions .shade div p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .elecOptions .shade div p:last-of-type,
+  .luxOptions .shade div p:last-of-type {
+    font-size: 26px;
+  }
+  .elecOptions .shade div span,
+  .luxOptions .shade div span {
+    font-size: 18px;
+    text-align: center;
+  }
+  .elecOptions .shade div button,
+  .luxOptions .shade div button {
+    width: 80%;
+    font-size: 16px;
+    margin: 25px;
+  }
+  .enjoy div {
+    width: 100%;
+  }
+  .enjoy .serviceInfo {
+    width: 100%;
+  }
+  .enjoy .serviceInfo p:first-child {
+    font-family: "Niramit", sans-serif;
+  }
+  footer {
+    min-height: 70vh;
+  }
+  footer .conAbt {
+    display: none;
+  }
+  footer .smFooter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(224, 224, 224, 0.6);
+    height: 60%;
+  }
+  footer .smFooter .smConAbt {
+    margin: auto;
+    width: 70%;
+  }
+  footer .smFooter .smConAbt button {
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    font-family: "Niramit", sans-serif;
+    font-size: 16px;
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  footer .smFooter .smConAbt li {
+    list-style: none;
+    font-weight: bold;
+    font-family: "Niramit", sans-serif;
+    margin: 10px 10px;
+  }
+  footer .socialMedia {
+    position: absolute;
+    bottom: 25px;
+    left: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .lastPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .lastPart p {
+    margin: 10px auto;
+    width: 150px;
+    font-size: "Niramit", sans-serif;
+  }
+  footer .lastPart ul {
+    margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer .lastPart ul li {
+    padding: 5px 11px;
+    font-size: 16px;
+  }
+  .navmenu {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    height: 100vh;
+    right: 0;
+    width: 100%;
+  }
+  .navmenu .navmenuTitle {
+    width: 100%;
+    border-bottom: 1px gray solid;
+    padding: 10px 30px;
+    display: flex;
+  }
+  .navmenu .navmenuTitle img {
+    width: 50px;
+    height: 50px;
+  }
+  .navmenu .navmenuTitle div {
+    margin: auto 0;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+  }
+  .navmenu .navmenuTitle div i {
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  .navmenu ul {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+  }
+  .navmenu ul li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Niramit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=mobile.css.map */

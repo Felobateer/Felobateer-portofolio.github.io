@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flexer($gap) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0 $gap;
+}
+@import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
+$font: "Niramit", sans-serif;
+$font2: "Agdasima", sans-serif;
+$bmwBlue: rgb(55, 90, 206);
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.intro {
+  padding: 15px 5%;
+  width: 95%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  position: relative;
+
+  nav {
+    border-bottom: 2px white solid;
+    @include flexer(15px);
+    padding: 0;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 8px;
+    }
+    ul {
+      @include flexer(25px);
+      width: 700px;
+      justify-content: space-evenly;
+      li {
+        list-style: none;
+        color: white;
+        font-size: 20px;
+        font-family: $font;
+        padding: 14px 0;
+      }
+      li:hover {
+        padding-bottom: 10px;
+        border-bottom: 4px $bmwBlue solid;
+        cursor: pointer;
+      }
+    }
+    div {
+      margin-left: auto;
+      padding-left: 5px;
+      @include flexer(5px);
+      i {
+        color: white;
+        font-size: 16px;
+        width: 40px;
+        padding-top: 14px;
+        &:last-child {
+          display: none;
+        }
+      }
+      i:hover {
+        padding-bottom: 10px;
+        border-bottom: 4px $bmwBlue solid;
+        cursor: pointer;
+      }
+    }
+  }
+  .bmwI5 {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: $font;
+    display: flex;
+    height: 80vh;
+    p {
+      color: white;
+      font-size: 20px;
+      height: fit-content;
+      position: absolute;
+      span {
+        font-weight: bold;
+      }
+    }
+    div {
+      margin: auto 15px;
+      padding-left: 0;
+      h1 {
+        color: white;
+        &:nth-child(2) {
+          font-size: 250px;
+          padding: 0;
+          font-family: $font2;
+        }
+        &:last-of-type {
+          display: inline;
+          font: $font2;
+          font-weight: normal;
+        }
+      }
+      .i5elec100 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        div {
+          width: fit-content;
+          margin: 2px;
+          height: fit-content;
+          &:first-child {
+            padding-top: 8px;
+          }
+          img {
+            width: 30px;
+            height: 15px;
+          }
+        }
+      }
+      button {
+        width: 200px;
+        height: 40px;
+        border: none;
+        background: transparent;
+        color: white;
+        font-size: large;
+        border-radius: 4px;
+        &:first-child {
+          border: 1px white solid;
+          &:hover {
+            border: 3px white solid;
+          }
+        }
+
+        &:last-of-type {
+          margin-left: 20px;
+          background-color: $bmwBlue;
+          &:hover {
+            background-color: rgb(44, 44, 196);
+          }
+        }
+      }
+    }
+  }
+  .shopTheLook {
+    background-color: white;
+    position: absolute;
+    bottom: 30px;
+    right: -5%;
+    z-index: 5;
+    height: fit-content;
+    @include flexer(0);
+    font-family: $font;
+    font-size: 20px;
+    div {
+      padding: 2px;
+      &:first-child {
+        width: 80px;
+        display: flex;
+        i {
+          margin: auto;
+        }
+      }
+      &:nth-child(2) {
+        padding: 0;
+        span {
+          font-weight: bold;
+          font-family: $font2;
+          font-size: 22px;
+          margin-left: 5px;
+          span {
+            width: 25px;
+            height: 25px;
+            font-weight: normal;
+            font-family: "Courier New", Courier, monospace;
+          }
+        }
+        span:hover {
+          color: $bmwBlue;
+        }
+      }
+    }
+  }
+}
+
+.i5Details {
+  position: relative;
+  p {
+    font-size: 17px;
+    margin: 40px 70px;
+    font-family: $font;
+  }
+}
+
+.onlineBuy {
+  width: 95%;
+  padding: 25px 5%;
+  font-family: $font2;
+  h2 {
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 56px;
+  }
+  div {
+    width: 100%;
+    @include flexer(5px);
+    justify-content: center;
+    div {
+      width: 30%;
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        width: 100%;
+        height: max-content;
+      }
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        display: block;
+      }
+      button {
+        display: block;
+        background: transparent;
+        width: 100%;
+        border: 2px black solid;
+        height: fit-content;
+        font-size: 20px;
+        padding: 10px 0;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.elecOptions {
+  background-image: url(../img/range.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 0;
+  height: 70vh;
+  .shade {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(43, 43, 43, 0.6),
+      rgba(43, 43, 43, 0)
+    );
+    div {
+      margin: auto 50px;
+      color: white;
+      font-family: $font;
+      width: 35%;
+      h1 {
+        padding-bottom: 2vh;
+        font-size: 20px;
+      }
+      p {
+        font-size: 30px;
+        font-weight: normal;
+      }
+      span {
+        font-weight: bold;
+        display: block;
+        font-size: 18px;
+      }
+      button {
+        background: transparent;
+        border: 2px white solid;
+        height: fit-content;
+        width: 500px;
+        color: white;
+        font-size: 20px;
+        padding: 10px 25px;
+        margin-top: 50px;
+        font-family: $font;
+        &:hover {
+          border: 3px white solid;
+        }
+      }
+    }
+  }
+}
+
+.elecDetails {
+  margin: 15px 50px;
+  font-family: $font2;
+  font-size: 22px;
+  p {
+    padding-bottom: 15px;
+    &:first-child {
+      padding-bottom: 5px;
+    }
+  }
+  h5 {
+    text-decoration: underline;
+    padding-bottom: 10px;
+  }
+}
+
+.luxOptions {
+  background-image: url(../img/luxirious.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 0;
+  height: 70vh;
+  .shade {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(43, 43, 43, 0.6),
+      rgba(43, 43, 43, 0)
+    );
+    div {
+      margin: auto 50px;
+      color: white;
+      font-family: $font;
+      width: 35%;
+      p {
+        font-size: 15px;
+        font-weight: normal;
+        &:last-of-type {
+          font-size: 60px;
+        }
+      }
+      button {
+        background: transparent;
+        border: 2px white solid;
+        height: fit-content;
+        width: 500px;
+        color: white;
+        font-size: 20px;
+        padding: 10px 25px;
+        margin-top: 50px;
+        font-family: $font;
+        &:hover {
+          border: 3px white solid;
+        }
+      }
+    }
+  }
+}
+
+.enjoy {
+  @include flexer(15px);
+  width: 90%;
+  margin: 30px 5%;
+  div {
+    width: 50%;
+    img {
+      width: 100%;
+      height: fit-content;
+      border-radius: 4px;
+    }
+  }
+  .serviceInfo {
+    display: flex;
+    width: 50%;
+    div {
+      margin: auto 25px;
+      font-family: $font;
+      width: 100%;
+      h1 {
+        font-size: 55px;
+      }
+      p {
+        font-size: 22px;
+        padding: 0 4px;
+        font-family: $font2;
+        &:first-child {
+          font-weight: bold;
+          font-size: 22px;
+          padding: 15px 0;
+        }
+      }
+      button {
+        background: transparent;
+        width: 250px;
+        height: fit-content;
+        border: 2px black solid;
+        padding: 10px;
+        font-weight: bold;
+        margin-top: 15px;
+        &:hover {
+          border: 3px black solid;
+        }
+      }
+    }
+  }
+}
+
+.serviceDetails {
+  width: 90%;
+  margin: 10px 5%;
+  p {
+    font-family: $font2;
+    font-size: 22px;
+    padding-bottom: 15px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 55vh;
+  font-family: $font;
+  .conAbt {
+    position: relative;
+    background-color: rgba(224, 224, 224, 0.6);
+    height: 80%;
+    @include flexer(0px);
+    .contact {
+      width: 50%;
+      margin: auto 100px;
+      h1 {
+        color: gray;
+        font-size: 12px;
+      }
+      ul {
+        padding: 15px 0;
+        li {
+          padding: 5px 0;
+          text-decoration: none;
+          list-style: none;
+          i {
+            margin-left: 7px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+      div {
+        position: absolute;
+        bottom: 45px;
+        left: 95px;
+        i {
+          padding: 0 10px;
+        }
+      }
+    }
+    .aboutBMW {
+      margin: auto 100px;
+      h1 {
+        color: gray;
+        font-size: 12px;
+      }
+      ul {
+        padding: 15px 0;
+        li {
+          padding: 5px 0;
+          text-decoration: none;
+          list-style: none;
+          i {
+            margin-left: 7px;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  .lastPart {
+    height: fit-content;
+    @include flexer(0);
+    padding-top: 18px;
+    p {
+      margin-left: 15px;
+    }
+    ul {
+      margin-left: auto;
+      margin-right: 35px;
+      @include flexer(10px);
+      width: 30%;
+      justify-content: space-evenly;
+      li {
+        list-style: none;
+        font-weight: bold;
+        font-size: 16px;
+      }
+    }
+  }
+  .smFooter {
+    display: none;
+  }
+}
+
+.chat {
+  background-color: $bmwBlue;
+  position: fixed;
+  z-index: 99;
+  width: 65px;
+  height: 65px;
+  bottom: 60px;
+  right: 0;
+  display: flex;
+  i {
+    margin: auto;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.navmenu {
+  display: none;
+}
