@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=0, width=device-width, initial-scale=1.0"
+    />
     <title>FSaadalla</title>
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -211,9 +214,20 @@
             src="./icons/jquery-1-logo-png-transparent-1024x232.png"
           />
           <img id="icon" src="./icons/sass.png" />
+          <button class="btn bg-secondary mx-3" onclick="github('bmw')">
+            <i class="fab fa-github" style="background: transparent"></i> See
+            Github
+          </button>
+          <button class="btn bg-secondary mx-3" onclick="seeWebsite('bmw')">
+            Visit Website
+            <i
+              class="fas fa-arrow-up-right-from-square"
+              style="background: transparent"
+            ></i>
+          </button>
         </div>
         <div class="projectView col-6" id="pv">
-          <a href="./BMW/bmw.html">
+          <a href="./BMW/bmw.html" target="_blank">
             <img id="projectPreview" src="./icons/bmwclone.PNG" />
           </a>
         </div>
@@ -239,9 +253,20 @@
           </p>
           <img id="icon" src="./icons/favicon.ico" />
           <img id="icon" src="./icons/bootstrap.png" />
+          <button class="btn bg-secondary mx-3" onclick="github('gotel')">
+            <i class="fab fa-github" style="background: transparent"></i> See
+            Github
+          </button>
+          <button class="btn bg-secondary mx-3" onclick="seeWebsite('gotel')">
+            Visit Website
+            <i
+              class="fas fa-arrow-up-right-from-square"
+              style="background: transparent"
+            ></i>
+          </button>
         </div>
         <div class="projectView col-6" id="pv">
-          <a href="./Gotel/Gotel.html">
+          <a href="./Gotel/Gotel.html" target="_blank">
             <img id="projectPreview" src="./icons/gotel.PNG" />
           </a>
         </div>
@@ -266,13 +291,61 @@
           </p>
           <img id="icon" src="./icons/vue.png" />
           <img id="icon" src="./icons/tailwind.png" />
+          <button class="btn bg-secondary mx-3" onclick="github('sweetMarket')">
+            <i class="fab fa-github" style="background: transparent"></i> See
+            Github
+          </button>
+          <button
+            class="btn bg-secondary mx-3"
+            onclick="seeWebsite('sweetMarket')"
+          >
+            Visit Website
+            <i
+              class="fas fa-arrow-up-right-from-square"
+              style="background: transparent"
+            ></i>
+          </button>
         </div>
         <div class="projectView col-6" id="pv">
-          <a href="./SM/SweetMarket.html">
+          <a href="./SM/SweetMarket.html" target="_blank">
             <img id="projectPreview" src="./icons/sm.PNG" />
           </a>
         </div>
       </div>
     </section>
+    <script>
+      function github(n) {
+        if (n === "bmw") {
+          window.open("https://github.com/Felobateer/BMW-clone");
+        } else if (n === "gotel") {
+          window.open("https://github.com/Felobateer/Gotel");
+        } else if (n === "sweetMarket") {
+          window.open("https://github.com/Felobateer/Sweet-Market/tree/master");
+        } else {
+          alert("no link found");
+        }
+      }
+
+      function seeWebsite(n) {
+        if (n === "bmw") {
+          window.open(
+            "https://felobateer-saadalla.netlify.app/bmw/bmw",
+            "_blank"
+          );
+        } else if (n === "gotel") {
+          window.open(
+            "https://felobateer-saadalla.netlify.app/gotel/gotel",
+            "_blank"
+          );
+        } else if (n === "sweetMarket") {
+          window.open(
+            "https://felobateer-saadalla.netlify.app/sm/sweetmarket",
+            "_blank"
+          );
+        } else {
+          alert("No link found");
+        }
+      }
+    </script>
   </body>
 </html>
