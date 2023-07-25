@@ -40,6 +40,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 .title-gradient {
@@ -50,6 +51,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Lisu Bosa", serif;
+  font-weight: bold;
 }
 
 .text-whitesmoke {
@@ -248,8 +250,8 @@ label {
 }
 
 @media (max-width: 500px) {
-  #Logo {
-    font-size: 45px;
+  html {
+    overflow-x: hidden;
   }
 
   #navbarNav ul li a {
@@ -263,9 +265,7 @@ label {
   }
 
   #profilePic {
-    left: -2vh;
-    width: 14vh;
-    height: 14vh;
+    display: none;
   }
 
   #webName {
