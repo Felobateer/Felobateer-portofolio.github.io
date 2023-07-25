@@ -1,9 +1,10 @@
 * {
-  background-color: rgb(82, 79, 79);
+  background-color: #1a1c2b;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   max-width: 100%;
+  font-family: "Roboto Slab", serif;
 }
 
 #about {
@@ -23,7 +24,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 50%;
-  box-shadow: 0 0 10px whitesmoke;
+  box-shadow: 0 0 10px rgba(245, 245, 245, 0.4);
   width: 120px;
   height: 120px;
   left: -7vh;
@@ -31,22 +32,43 @@
   z-index: 100;
 }
 
-.text-lightwhitesmoke {
-  color: whitesmoke;
+.text-gradient {
+  background: linear-gradient(90deg, #1ab8d2, #8e6fe9);
+  background-clip: text;
+  width: fit-content;
+  height: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Roboto", sans-serif;
+}
+
+.title-gradient {
+  background: linear-gradient(90deg, #1ad26d, #abbd49);
+  background-clip: text;
+  width: fit-content;
+  height: fit-content;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Lisu Bosa", serif;
 }
 
 .text-whitesmoke {
-  color: rgb(201, 190, 190);
+  color: #ffffff80;
 }
 
 .text-darkwhitesmoke {
   color: rgb(121, 119, 119);
 }
 
+.text {
+  color: #ffffffa9;
+  font-family: "Montserrat", sans-serif;
+}
+
 #profile {
   border-radius: 20px;
   width: 90vh;
-  box-shadow: 0 0 2vh wheat;
+  box-shadow: 0 0 2vh rgba(245, 222, 179, 0.1);
 }
 
 #profile h1,
@@ -73,7 +95,7 @@ span {
   margin-left: 50vh;
   width: 50vh;
   border-radius: 20px;
-  box-shadow: 0 0 20px wheat;
+  box-shadow: 0 0 20px rgba(245, 222, 179, 0.1);
 }
 
 #skillsection h1,
@@ -140,9 +162,7 @@ ul li {
     width: 80vh;
   }
 
-  .project1,
-  .project2,
-  .project3 {
+  .project {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
@@ -207,6 +227,12 @@ label {
 #projectLogo3 {
   width: 10vh;
   margin-left: 2vh;
+}
+
+#projectLogo4 {
+  width: fit-content;
+  height: 50px;
+  border-radius: 60px;
 }
 
 #projectPreview {
