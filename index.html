@@ -43,12 +43,12 @@
   <body>
     <section id="about">
       <div
-        class="position-relative container-fluid d-flex flex-row flex-wrap align-items-center"
+        id="aboutMe"
+        class="position-relative container-fluid align-items-center"
       >
-        <input type="checkbox" id="see" />
+        <input type="checkbox" id="see" style="display: none" />
         <div class="position-relative container" id="fullProfile">
-          <div class="position-absolute" id="profilePic"></div>
-          <div class="container bg-dark" id="profile">
+          <div class="container" id="profile">
             <div class="title-gradient fs-3 mx-5 my-2">Felobateer Saadalla</div>
             <div class="text-gradient fs-4 mx-5">Frontend Developer</div>
             <p class="text-whitesmoke fs-5">
@@ -73,17 +73,18 @@
             </div>
             <h1 class="fs-4 text-darkwhitesmoke">
               <span class="fas fa-envelope"></span>
-              Email: felobateersamy01@gmail.com
+              felobateersaadalla@gmail.com
             </h1>
             <h1 class="fs-4 text-darkwhitesmoke">
               <span class="fas fa-phone"></span>
-              Phone: 0151 101 70902
+              +49 151 101 70902
             </h1>
           </div>
         </div>
-        <div class="position-relative container bg-dark" id="skillsection">
+        <div class="position-relative container" id="skillSection">
           <div class="fs-3 m-auto title-gradient">My Skills</div>
-          <ul class="d-flex flex-row flex-wrap">
+          <input type="checkbox" style="display: none" id="display" />
+          <ul id="essentialSkills">
             <li class="fs-4 text-white pb-2">
               <div id="codeSkill">
                 <img src="./icons/html5.png" />
@@ -110,7 +111,10 @@
             </li>
             <li class="fs-4 text-white pb-2">
               <div id="codeSkill">
-                <img src="./icons/jquery-1-logo-png-transparent-1024x232.png" />
+                <img
+                  style="width: 4.5rem"
+                  src="./icons/jquery-1-logo-png-transparent-1024x232.png"
+                />
                 <h1 class="fs-5 text-white">jQuery</h1>
               </div>
             </li>
@@ -138,6 +142,9 @@
                 <h1 class="fs-5 text-white">Vue</h1>
               </div>
             </li>
+          </ul>
+          <label class="fs-5" id="More" for="display">See more</label>
+          <ul id="moreSkills">
             <li class="fs-4 text-white pb-2">
               <div id="codeSkill">
                 <img src="./icons/tailwind.png" />
@@ -162,6 +169,10 @@
                 <h1 class="fs-5 text-white">Shopify</h1>
               </div>
             </li>
+            <li></li>
+            <li>
+              <label class="fs-5" for="display" id="more">Close</label>
+            </li>
           </ul>
         </div>
       </div>
@@ -174,10 +185,11 @@
           <div class="d-flex flex-nowrap">
             <div class="ml-1">
               <img
-                id="projectLogo4"
+                id="projectLogo"
                 src="./icons/solidstockLogo.PNG"
                 class="col-6"
                 id="g-img"
+                style="width: 15rem"
               />
             </div>
             <div id="webName" class="mx-auto text-gradient display-6">
@@ -227,10 +239,11 @@
           <div class="d-flex flex-nowrap">
             <div class="ml-1">
               <img
-                id="projectLogo3"
+                id="projectLogo"
                 src="./BMW/img/BMW_White_Logo.svg.asset.1670245093434.svg"
                 class="col-6"
                 id="g-img"
+                style="width: 5rem"
               />
             </div>
             <div id="webName" class="mx-auto text-gradient display-5">
@@ -278,6 +291,7 @@
                 src="./icons/Gotel-logo.PNG"
                 class="col-6"
                 id="g-img"
+                style="width: 10rem"
               />
             </div>
             <div id="webName" class="mx-auto text-gradient display-5">
@@ -323,10 +337,11 @@
           >
             <div class="ml-1">
               <img
-                id="projectLogo2"
+                id="projectLogo"
                 src="./icons/sweetmarket-logo.PNG"
                 class="col-6"
                 id="sm-img"
+                style="width: 7rem"
               />
             </div>
             <div id="webName" class="mx-auto text-gradient display-5">

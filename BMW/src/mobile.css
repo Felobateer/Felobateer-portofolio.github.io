@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Niramit&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agdasima&display=swap");
 @media (max-width: 1000px) {
+  .intro {
+    padding: 0.5rem;
+  }
   .intro nav {
     border: none;
-    width: 110%;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -84,10 +87,14 @@
   .i5Details p {
     margin: 35px;
   }
+  .onlineBuy {
+    margin: 0;
+    padding: 0;
+  }
   .onlineBuy h2,
   .onlineBuy h1 {
     text-align: center;
-    width: 90%;
+    width: 100%;
   }
   .onlineBuy div {
     justify-content: right;
@@ -247,5 +254,15 @@
     font-family: "Niramit", sans-serif;
     display: flex;
     justify-content: space-between;
+  }
+}
+@media (min-width: 2000px) {
+  body {
+    max-width: 1950px;
+    overflow-x: hidden;
+  }
+  html {
+    display: flex;
+    justify-content: center;
   }
 }/*# sourceMappingURL=mobile.css.map */

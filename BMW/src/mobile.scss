@@ -5,9 +5,10 @@ $font2: "Agdasima", sans-serif;
 
 @media (max-width: 1000px) {
   .intro {
+    padding: 0.5rem;
     nav {
       border: none;
-      width: 110%;
+      width: 100%;
       margin: 0;
       padding: 0;
       ul {
@@ -100,10 +101,12 @@ $font2: "Agdasima", sans-serif;
   }
 
   .onlineBuy {
+    margin: 0;
+    padding: 0;
     h2,
     h1 {
       text-align: center;
-      width: 90%;
+      width: 100%;
     }
     div {
       justify-content: right;
@@ -274,5 +277,17 @@ $font2: "Agdasima", sans-serif;
         justify-content: space-between;
       }
     }
+  }
+}
+
+@media (min-width: 2000px) {
+  body {
+    max-width: 1950px;
+    overflow-x: hidden;
+  }
+
+  html {
+    display: flex;
+    justify-content: center;
   }
 }

@@ -3,33 +3,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 100%;
   font-family: "Roboto Slab", serif;
 }
 
 #about {
-  padding-top: 10vh;
+  padding: 5rem;
+}
+
+#aboutMe {
+  display: grid;
+  grid-template-columns: 60% 40%;
 }
 
 #fullProfile {
-  min-width: 550px;
-  max-width: 60vh;
-  width: 60%;
-  margin-left: 15vh;
-}
-
-#profilePic {
-  background-image: url(./icons/Picture.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(245, 245, 245, 0.4);
-  width: 120px;
-  height: 120px;
-  left: -7vh;
-  top: 0;
-  z-index: 100;
+  min-width: 25rem;
+  max-width: 70rem;
 }
 
 .text-gradient {
@@ -69,60 +57,38 @@
 
 #profile {
   border-radius: 20px;
-  width: 90vh;
-  box-shadow: 0 0 2vh rgba(245, 222, 179, 0.1);
+  width: 85%;
+  box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
 }
 
-#profile h1,
-p,
-span {
-  background: none;
-}
-
-#profile p {
-  padding: 15px;
-  padding-bottom: 0;
-}
-
-#profile h1 {
-  padding-bottom: 1vh;
-  padding-left: 1rem;
-}
-
-#profile h1:nth-child(1) {
-  padding-top: 2vh;
-}
-
-#skillsection {
-  margin-left: 50vh;
-  width: 50vh;
+#skillSection {
+  width: 25rem;
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(245, 222, 179, 0.1);
+  box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
 }
 
-#skillsection h1,
-ul,
-ul li {
-  background: none;
-}
-
-#skillsection ul {
+#essentialSkills {
   text-decoration: none;
   list-style-type: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+#skillSection li {
+  width: fit-content;
 }
 
 #codeSkill {
-  background: none;
-  width: 10vh;
-  height: 10vh;
-  padding: 10px;
-  position: relative;
+  width: fit-content;
+  height: 4.5rem;
+  overflow: visible;
 }
 
 #codeSkill img {
-  background: none;
-  width: 7vh;
-  height: 7vh;
+  width: fit-content;
+  height: 4.5rem;
 }
 
 #codeSkill h1 {
@@ -130,8 +96,21 @@ ul li {
   text-align: center;
 }
 
-#softSkill {
-  margin: 1vh;
+#moreSkills {
+  display: none;
+}
+
+#display:checked ~ #More {
+  display: none;
+}
+
+#display:checked ~ #moreSkills {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
 }
 
 #skillsection ul li:hover {
@@ -140,54 +119,22 @@ ul li {
   }
 
   #codeSkill img {
-    width: 8vh;
-    height: 8vh;
-  }
-}
-
-@media (max-width: 1000px) {
-  #fullProfile {
-    display: flex;
-    flex-wrap: wrap;
-    flex-grow: initial;
-    margin: auto;
-    width: 80vh;
+    width: 4rem;
+    height: 4rem;
   }
 
-  #profilePic {
-    left: -6vh;
-  }
-
-  #skillsection {
-    margin: auto;
-    margin-top: 3vh;
-    width: 80vh;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-  }
-
-  #projects div div {
-    width: 100%;
+  #codeSkill {
+    z-index: 1000;
   }
 }
 
 #seeMore {
-  background: none;
   display: none;
-  margin-top: 0;
-  padding-top: 0;
 }
 
 label {
-  background: none;
-  margin-left: 2vh;
-  color: rgb(51, 51, 207);
-  cursor: pointer;
-  display: inline-block;
+  margin-left: 3rem;
+  color: rgba(51, 51, 207, 0.8);
 }
 
 #see {
@@ -206,47 +153,74 @@ label {
   overflow-x: hidden;
 }
 
+.project {
+  display: grid;
+  grid-template-columns: 70%;
+}
+
 #icon {
-  width: 7vh;
-  height: 7vh;
-  margin: 2vh;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem;
 }
 
 #projectLogo {
-  width: 20vh;
+  width: 10rem;
   height: fit-content;
   border-radius: 25px;
-  margin-left: 2vh;
-}
-
-#projectLogo2 {
-  width: 14vh;
-  height: 10vh;
-  border-radius: 20px;
-  margin-left: 2vh;
-}
-
-#projectLogo3 {
-  width: 10vh;
-  margin-left: 2vh;
-}
-
-#projectLogo4 {
-  width: fit-content;
-  height: 50px;
-  border-radius: 60px;
+  margin-left: 3rem;
 }
 
 #projectPreview {
-  width: 70%;
-  height: 70%;
-  margin: 5vh 15vh;
+  width: 60%;
+  height: fit-content;
+  margin: 2.5rem 11rem;
   border-radius: 25px;
   box-shadow: 0 0 20px wheat;
 }
 
 #projectPreview:hover {
-  box-shadow: 0 0 30px white;
+  box-shadow: 0 0 20px white;
+}
+
+@media (min-width: 2000px) {
+  body {
+    max-width: 1950px;
+  }
+
+  html {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  #aboutMe {
+    grid-template-columns: 90%;
+  }
+
+  #fullProfile {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: initial;
+    margin: auto;
+    width: 50rem;
+  }
+
+  #skillSection {
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+
+  #projects div div {
+    width: 100%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -254,18 +228,24 @@ label {
     overflow-x: hidden;
   }
 
-  #navbarNav ul li a {
-    text-align: center;
-    font-size: 30px;
+  #about {
+    padding: 2rem 0.3rem;
+  }
+
+  #fullProfile {
+    width: 100%;
   }
 
   #profile {
-    width: 60%;
-    margin-right: 35%;
+    margin: 0;
   }
 
-  #profilePic {
-    display: none;
+  #skillSection {
+    width: 90%;
+  }
+
+  #skillSection img {
+    width: 3.5rem;
   }
 
   #webName {
@@ -281,11 +261,12 @@ label {
     align-items: start;
     padding-left: 0;
     margin-left: 0;
-    padding-bottom: 3vh;
+    padding-bottom: 3rem;
   }
 
   #projectPreview {
-    width: 50vh;
+    width: 20rem;
     height: fit-content;
+    margin: 0 25px;
   }
 }

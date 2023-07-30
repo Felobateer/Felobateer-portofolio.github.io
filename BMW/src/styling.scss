@@ -16,17 +16,24 @@ $font: "Niramit", sans-serif;
 $font2: "Agdasima", sans-serif;
 $bmwBlue: rgb(55, 90, 206);
 
+body {
+  position: relative;
+}
+
 video {
   position: absolute;
   width: 100%;
-  height: 90vh;
+  max-width: 1950px;
+  height: 53.5rem;
+  object-position: center;
   object-fit: cover;
+  left: 0;
   z-index: -1;
 }
 
 .intro {
-  padding: 15px 5%;
-  width: 95%;
+  padding: 1rem 5.5rem;
+  width: 100%;
   padding-bottom: 0;
   margin-bottom: 0;
   position: relative;
@@ -82,7 +89,7 @@ video {
     padding-bottom: 10px;
     font-family: $font;
     display: flex;
-    height: 80vh;
+    height: 46.5rem;
     p {
       color: white;
       font-size: 20px;
@@ -154,7 +161,7 @@ video {
     background-color: white;
     position: absolute;
     bottom: 30px;
-    right: -5%;
+    right: 0;
     z-index: 5;
     height: fit-content;
     @include flexer(0);
@@ -248,7 +255,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;
-  height: 70vh;
+  height: 40rem;
   .shade {
     display: flex;
     width: 100%;
@@ -316,7 +323,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;
-  height: 70vh;
+  height: 40rem;
   .shade {
     display: flex;
     width: 100%;
@@ -416,7 +423,7 @@ video {
 
 footer {
   width: 100%;
-  height: 55vh;
+  height: 35rem;
   font-family: $font;
   .conAbt {
     position: relative;
@@ -502,7 +509,7 @@ footer {
   z-index: 99;
   width: 65px;
   height: 65px;
-  bottom: 60px;
+  bottom: 12.6rem;
   right: 0;
   display: flex;
   i {

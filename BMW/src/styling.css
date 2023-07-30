@@ -6,18 +6,26 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 video {
   position: absolute;
   width: 100%;
-  height: 90vh;
+  max-width: 1950px;
+  height: 53.5rem;
+  -o-object-position: center;
+     object-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+  left: 0;
   z-index: -1;
 }
 
 .intro {
-  padding: 15px 5%;
-  width: 95%;
+  padding: 1rem 5.5rem;
+  width: 100%;
   padding-bottom: 0;
   margin-bottom: 0;
   position: relative;
@@ -82,7 +90,7 @@ video {
   padding-bottom: 10px;
   font-family: "Niramit", sans-serif;
   display: flex;
-  height: 80vh;
+  height: 46.5rem;
 }
 .intro .bmwI5 p {
   color: white;
@@ -156,7 +164,7 @@ video {
   background-color: white;
   position: absolute;
   bottom: 30px;
-  right: -5%;
+  right: 0;
   z-index: 5;
   height: -moz-fit-content;
   height: fit-content;
@@ -258,7 +266,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;
-  height: 70vh;
+  height: 40rem;
 }
 .elecOptions .shade {
   display: flex;
@@ -323,7 +331,7 @@ video {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 0;
-  height: 70vh;
+  height: 40rem;
 }
 .luxOptions .shade {
   display: flex;
@@ -425,7 +433,7 @@ video {
 
 footer {
   width: 100%;
-  height: 55vh;
+  height: 35rem;
   font-family: "Niramit", sans-serif;
 }
 footer .conAbt {
@@ -521,7 +529,7 @@ footer .smFooter {
   z-index: 99;
   width: 65px;
   height: 65px;
-  bottom: 60px;
+  bottom: 12.6rem;
   right: 0;
   display: flex;
 }
