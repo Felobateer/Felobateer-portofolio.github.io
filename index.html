@@ -7,6 +7,7 @@
       content="user-scalable=0, width=device-width, initial-scale=1.0"
     />
     <meta name="HandheldFriendly" content="true" />
+    <link rel="icon" href="./icons/FSIcon.PNG" />
     <title>FSaadalla</title>
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -69,7 +70,7 @@
                 collaboration. My passion for innovation and collaboration
                 drives me to excel in any team setting.
               </p>
-              <label class="fs-5" for="see">Show less</label>
+              <label class="fs-5" for="see" id="Less">Show less</label>
             </div>
             <h1 class="fs-4 text-darkwhitesmoke">
               <span class="fas fa-envelope"></span>
@@ -121,7 +122,7 @@
             <li class="fs-4 text-white pb-2">
               <div id="codeSkill">
                 <img src="./icons/sass.png" />
-                <h1 class="fs-5 text-white">SCSS & SASS</h1>
+                <h1 class="fs-5 text-white">SASS</h1>
               </div>
             </li>
             <li class="fs-4 text-white pb-2">
@@ -165,15 +166,12 @@
             </li>
             <li class="fs-4 text-white pb-2">
               <div id="codeSkill">
-                <img src="./icons/Shopify-Emblem.png" />
+                <img style="width: 4.3rem" src="./icons/Shopify-Emblem.png" />
                 <h1 class="fs-5 text-white">Shopify</h1>
               </div>
             </li>
-            <li></li>
-            <li>
-              <label class="fs-5" for="display" id="more">Close</label>
-            </li>
           </ul>
+          <label class="fs-5" for="display" id="less">See Less</label>
         </div>
       </div>
     </section>
@@ -213,20 +211,25 @@
           <img id="icon" src="./icons/Typescript_logo_2020.svg.png" />
           <img src="./icons/tailwind.png" id="icon" />
           <img src="./icons/sass.png" id="icon" />
-          <button class="btn bg-secondary mx-3" onclick="github('solidstock')">
-            <i class="fab fa-github" style="background: transparent"></i> See
-            Github
-          </button>
-          <button
-            class="btn bg-secondary mx-3"
-            onclick="seeWebsite('solidstock')"
-          >
-            Visit Website
-            <i
-              class="fas fa-arrow-up-right-from-square"
-              style="background: transparent"
-            ></i>
-          </button>
+          <div id="sites">
+            <button
+              class="btn bg-secondary mx-3"
+              onclick="github('solidstock')"
+            >
+              <i class="fab fa-github" style="background: transparent"></i> See
+              Github
+            </button>
+            <button
+              class="btn bg-secondary mx-3"
+              onclick="seeWebsite('solidstock')"
+            >
+              Visit Website
+              <i
+                class="fas fa-arrow-up-right-from-square"
+                style="background: transparent"
+              ></i>
+            </button>
+          </div>
         </div>
         <div class="projectView col-6" id="pv">
           <a href="./SolidStock/SolidStock.html" target="_blank">
@@ -264,17 +267,19 @@
             src="./icons/jquery-1-logo-png-transparent-1024x232.png"
           />
           <img id="icon" src="./icons/sass.png" />
-          <button class="btn bg-secondary mx-3" onclick="github('bmw')">
-            <i class="fab fa-github" style="background: transparent"></i> See
-            Github
-          </button>
-          <button class="btn bg-secondary mx-3" onclick="seeWebsite('bmw')">
-            Visit Website
-            <i
-              class="fas fa-arrow-up-right-from-square"
-              style="background: transparent"
-            ></i>
-          </button>
+          <div id="sites">
+            <button class="btn bg-secondary mx-3" onclick="github('bmw')">
+              <i class="fab fa-github" style="background: transparent"></i> See
+              Github
+            </button>
+            <button class="btn bg-secondary mx-3" onclick="seeWebsite('bmw')">
+              Visit Website
+              <i
+                class="fas fa-arrow-up-right-from-square"
+                style="background: transparent"
+              ></i>
+            </button>
+          </div>
         </div>
         <div class="projectView col-6" id="pv">
           <a href="./BMW/bmw.html" target="_blank">
@@ -311,17 +316,19 @@
           </p>
           <img id="icon" src="./icons/favicon.ico" />
           <img id="icon" src="./icons/bootstrap.png" />
-          <button class="btn bg-secondary mx-3" onclick="github('gotel')">
-            <i class="fab fa-github" style="background: transparent"></i> See
-            Github
-          </button>
-          <button class="btn bg-secondary mx-3" onclick="seeWebsite('gotel')">
-            Visit Website
-            <i
-              class="fas fa-arrow-up-right-from-square"
-              style="background: transparent"
-            ></i>
-          </button>
+          <div id="sites">
+            <button class="btn bg-secondary mx-3" onclick="github('gotel')">
+              <i class="fab fa-github" style="background: transparent"></i> See
+              Github
+            </button>
+            <button class="btn bg-secondary mx-3" onclick="seeWebsite('gotel')">
+              Visit Website
+              <i
+                class="fas fa-arrow-up-right-from-square"
+                style="background: transparent"
+              ></i>
+            </button>
+          </div>
         </div>
         <div class="projectView col-6" id="pv">
           <a href="./Gotel/Gotel.html" target="_blank">
@@ -360,20 +367,25 @@
           </p>
           <img id="icon" src="./icons/vue.png" />
           <img id="icon" src="./icons/tailwind.png" />
-          <button class="btn bg-secondary mx-3" onclick="github('sweetMarket')">
-            <i class="fab fa-github" style="background: transparent"></i> See
-            Github
-          </button>
-          <button
-            class="btn bg-secondary mx-3"
-            onclick="seeWebsite('sweetMarket')"
-          >
-            Visit Website
-            <i
-              class="fas fa-arrow-up-right-from-square"
-              style="background: transparent"
-            ></i>
-          </button>
+          <div id="sites">
+            <button
+              class="btn bg-secondary mx-3"
+              onclick="github('sweetMarket')"
+            >
+              <i class="fab fa-github" style="background: transparent"></i> See
+              Github
+            </button>
+            <button
+              class="btn bg-secondary mx-3"
+              onclick="seeWebsite('sweetMarket')"
+            >
+              Visit Website
+              <i
+                class="fas fa-arrow-up-right-from-square"
+                style="background: transparent"
+              ></i>
+            </button>
+          </div>
         </div>
         <div class="projectView col-6" id="pv">
           <a href="./SM/SweetMarket.html" target="_blank">

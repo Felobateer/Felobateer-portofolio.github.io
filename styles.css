@@ -70,7 +70,7 @@
 #essentialSkills {
   text-decoration: none;
   list-style-type: none;
-  margin: 0 auto;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
@@ -88,7 +88,8 @@
 
 #codeSkill img {
   width: fit-content;
-  height: 4.5rem;
+  height: 4rem;
+  margin: auto;
 }
 
 #codeSkill h1 {
@@ -100,6 +101,29 @@
   display: none;
 }
 
+#skillSection li:hover {
+  #codeSkill h1 {
+    display: block;
+  }
+}
+
+#more:hover,
+#More:hover,
+#less:hover,
+#Less:hover {
+  color: lightblue;
+}
+
+#less {
+  display: none;
+}
+
+#display:checked ~ #less {
+  display: block;
+  float: right;
+  margin-bottom: 0.5rem;
+}
+
 #display:checked ~ #More {
   display: none;
 }
@@ -108,24 +132,9 @@
   text-decoration: none;
   list-style-type: none;
   margin: 0 auto;
+  margin-bottom: 0.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
-}
-
-#skillsection ul li:hover {
-  #codeSkill h1 {
-    display: block;
-  }
-
-  #codeSkill img {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  #codeSkill {
-    z-index: 1000;
-  }
 }
 
 #seeMore {
@@ -181,6 +190,10 @@ label {
 
 #projectPreview:hover {
   box-shadow: 0 0 20px white;
+}
+
+#sites button:hover {
+  color: white;
 }
 
 @media (min-width: 2000px) {
