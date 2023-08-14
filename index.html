@@ -49,7 +49,7 @@
       >
         <input type="checkbox" id="see" style="display: none" />
         <div class="position-relative container" id="fullProfile">
-          <div class="container" id="profile">
+          <div class="container" id="profile" style="overflow-y: hidden">
             <div class="title-gradient fs-3 mx-5 my-2">Felobateer Saadalla</div>
             <div class="text-gradient fs-4 mx-5">Frontend Developer</div>
             <p class="text-whitesmoke fs-5">
@@ -80,6 +80,27 @@
               <span class="fas fa-phone"></span>
               +49 151 101 70902
             </h1>
+            <div
+              id="moreInfo"
+              style="
+                position: absolute;
+                right: 7rem;
+                opacity: 0;
+                width: fit-content;
+              "
+            >
+              <button class="btn btn-secondary mx-3" onclick="github('main')">
+                <i class="fab fa-github" style="background: transparent"></i>
+                GitHub
+              </button>
+              <button class="btn btn-secondary" onclick="resume()">
+                <i
+                  class="fa-regular fa-file"
+                  style="background: transparent"
+                ></i>
+                Resume
+              </button>
+            </div>
           </div>
         </div>
         <div class="position-relative container" id="skillSection">
@@ -216,8 +237,8 @@
               class="btn bg-secondary mx-3"
               onclick="github('solidstock')"
             >
-              <i class="fab fa-github" style="background: transparent"></i> See
-              Github
+              <i class="fab fa-github" style="background: transparent"></i>
+              See Github
             </button>
             <button
               class="btn bg-secondary mx-3"
@@ -269,8 +290,8 @@
           <img id="icon" src="./icons/sass.png" />
           <div id="sites">
             <button class="btn bg-secondary mx-3" onclick="github('bmw')">
-              <i class="fab fa-github" style="background: transparent"></i> See
-              Github
+              <i class="fab fa-github" style="background: transparent"></i>
+              See Github
             </button>
             <button class="btn bg-secondary mx-3" onclick="seeWebsite('bmw')">
               Visit Website
@@ -318,8 +339,8 @@
           <img id="icon" src="./icons/bootstrap.png" />
           <div id="sites">
             <button class="btn bg-secondary mx-3" onclick="github('gotel')">
-              <i class="fab fa-github" style="background: transparent"></i> See
-              Github
+              <i class="fab fa-github" style="background: transparent"></i>
+              See Github
             </button>
             <button class="btn bg-secondary mx-3" onclick="seeWebsite('gotel')">
               Visit Website
@@ -372,8 +393,8 @@
               class="btn bg-secondary mx-3"
               onclick="github('sweetMarket')"
             >
-              <i class="fab fa-github" style="background: transparent"></i> See
-              Github
+              <i class="fab fa-github" style="background: transparent"></i>
+              See Github
             </button>
             <button
               class="btn bg-secondary mx-3"
@@ -394,6 +415,9 @@
         </div>
       </div>
     </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script>
       function github(n) {
         if (n === "bmw") {
@@ -405,7 +429,7 @@
         } else if (n === "solidstock") {
           window.open("https://github.com/Felobateer/Solid-Stock");
         } else {
-          alert("no link found");
+          window.open("https://github.com/Felobateer");
         }
       }
 
@@ -434,6 +458,42 @@
           alert("No link found");
         }
       }
+
+      const resume = () => window.open("icons/CV.pdf");
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      const timeline = gsap.timeline({ defaults: { ease: "smooth" } });
+      timeline
+        .from("#profile", { duration: 1, opacity: 0 })
+        .from("#skillSection", { duration: 1, opacity: 0, x: "-100%" })
+        .from("#codeSkill", { duration: 1, opacity: 0 })
+        .to("#moreInfo", { duration: 0.5, y: "-200%", opacity: 1 });
+
+      const pvElements = document.querySelectorAll("#pv");
+      const pdElements = document.querySelectorAll("#pd");
+      pvElements.forEach((pvElement) => {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: pvElement,
+              start: "top center",
+              end: "bottom center",
+            },
+          })
+          .from(pvElement, { duration: 1, opacity: 0, x: "100%" });
+      });
+      pdElements.forEach((pdElement) => {
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: pdElement,
+              start: "top center",
+              end: "bottom center",
+            },
+          })
+          .from(pdElement, { duration: 1.2, opacity: 0 });
+      });
     </script>
   </body>
 </html>
