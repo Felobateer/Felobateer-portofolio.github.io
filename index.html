@@ -198,7 +198,12 @@
     </section>
 
     <section id="projects" class="pt-5">
-      <div class="m-auto display-4 p-1 title-gradient mt-5 mb-5">Projects</div>
+      <div
+        class="m-auto display-4 p-1 title-gradient mt-5 mb-5"
+        id="projectsTitle"
+      >
+        Portfolio
+      </div>
       <div class="project row p-3">
         <div class="projectDescription col-6 mb-5" id="pd">
           <div class="d-flex flex-nowrap">
@@ -494,6 +499,15 @@
           })
           .from(pdElement, { duration: 1.2, opacity: 0 });
       });
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#projectsTitle",
+            start: "top center",
+            end: "bottom center",
+          },
+        })
+        .from("#projectsTitle", { duration: 1, opacity: 0 });
     </script>
   </body>
 </html>
