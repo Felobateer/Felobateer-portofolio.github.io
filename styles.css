@@ -61,80 +61,77 @@
   box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
 }
 
+#moreInfo {
+  position: absolute;
+  right: 7rem;
+  bottom: 1rem;
+  width: fit-content;
+}
+
 #skillSection {
   width: 25rem;
   border-radius: 20px;
   box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
 }
 
-#essentialSkills {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 1rem auto;
+#skillList {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
-#skillSection li {
-  width: fit-content;
+#skillList li {
+  color: whitesmoke;
+  list-style: none;
+  width: 5rem;
 }
 
-#codeSkill {
-  width: fit-content;
-  height: 4.5rem;
-  overflow: visible;
+#skillList li p {
+  display: none;
 }
 
-#codeSkill img {
-  width: fit-content;
+#skillList li img {
+  max-width: 5rem;
   height: 4rem;
   margin: auto;
 }
 
-#codeSkill h1 {
-  display: none;
+#pagination {
+  display: flex;
+  justify-content: center;
+}
+
+#pagination button {
+  background-color: gray;
+  color: whitesmoke;
+  width: 2rem;
+  height: fit-content;
+  border: none;
+  margin: 1rem 0;
+}
+
+#pagination button:first-of-type {
+  border-radius: 1rem 0 0 1rem;
+}
+
+#pagination button:last-of-type {
+  border-radius: 0 1rem 1rem 0;
+}
+
+#pagination button:hover {
+  background-color: rgba(128, 128, 128, 0.4);
+}
+
+#skillSection ul li:hover > p {
+  position: absolute;
+  background: none;
+  display: block;
   text-align: center;
 }
 
-#moreSkills {
-  display: none;
-}
-
-#skillSection li:hover {
-  #codeSkill h1 {
-    display: block;
-  }
-}
-
 #more:hover,
-#More:hover,
-#less:hover,
 #Less:hover {
   color: lightblue;
-}
-
-#less {
-  display: none;
-}
-
-#display:checked ~ #less {
-  display: block;
-  float: right;
-  margin-bottom: 0.5rem;
-}
-
-#display:checked ~ #More {
-  display: none;
-}
-
-#display:checked ~ #moreSkills {
-  text-decoration: none;
-  list-style-type: none;
-  margin: 0 auto;
-  margin-bottom: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 #seeMore {
@@ -207,9 +204,28 @@ label {
   }
 }
 
+@media (max-width: 1600px) {
+  #moreInfo {
+    position: relative;
+    right: 0;
+    margin: 2rem 0;
+  }
+}
+
 @media (max-width: 1000px) {
+  #about {
+    padding: 2rem 0.5rem;
+    overflow-x: hidden;
+  }
+
   #aboutMe {
-    grid-template-columns: 90%;
+    grid-template-columns: 100%;
+  }
+
+  #profile {
+    margin: 0;
+    overflow-x: hidden;
+    width: 90%;
   }
 
   #fullProfile {
@@ -247,10 +263,6 @@ label {
 
   #fullProfile {
     width: 100%;
-  }
-
-  #profile {
-    margin: 0;
   }
 
   #skillSection {

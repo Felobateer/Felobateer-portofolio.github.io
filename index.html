@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2N8JHEGK56"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2N8JHEGK56"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-2N8JHEGK56');
-</script>
+      gtag("config", "G-2N8JHEGK56");
+    </script>
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -89,15 +93,7 @@
               <span class="fas fa-phone"></span>
               +49 151 101 70902
             </h1>
-            <div
-              id="moreInfo"
-              style="
-                position: absolute;
-                right: 7rem;
-                opacity: 0;
-                width: fit-content;
-              "
-            >
+            <div id="moreInfo">
               <button class="btn btn-secondary mx-3" onclick="github('main')">
                 <i class="fab fa-github" style="background: transparent"></i>
                 GitHub
@@ -114,94 +110,8 @@
         </div>
         <div class="position-relative container" id="skillSection">
           <div class="fs-3 m-auto title-gradient">My Skills</div>
-          <input type="checkbox" style="display: none" id="display" />
-          <ul id="essentialSkills">
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/html5.png" />
-                <h1 class="fs-5 text-white">HTML 5</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/css3.png" />
-                <h1 class="fs-5 text-white">CSS3</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/js.png" id="simg" />
-                <h1 class="fs-5 text-white">JavaScript</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/Typescript_logo_2020.svg.png" id="simg" />
-                <h1 class="fs-5 text-white">TypeScript</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img
-                  style="width: 4.5rem"
-                  src="./icons/jquery-1-logo-png-transparent-1024x232.png"
-                />
-                <h1 class="fs-5 text-white">jQuery</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/sass.png" />
-                <h1 class="fs-5 text-white">SASS</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/Angular.png" />
-                <h1 class="fs-5 text-white">Angular</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/favicon.ico" />
-                <h1 class="fs-5 text-white">React</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/vue.png" />
-                <h1 class="fs-5 text-white">Vue</h1>
-              </div>
-            </li>
-          </ul>
-          <label class="fs-5" id="More" for="display">See more</label>
-          <ul id="moreSkills">
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/tailwind.png" />
-                <h1 class="fs-5 text-white">Tailwind</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/bootstrap.png" id="simg" />
-                <h1 class="fs-5 text-white">Bootstrap</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img src="./icons/R.png" id="simg" />
-                <h1 class="fs-5 text-white">WordPress</h1>
-              </div>
-            </li>
-            <li class="fs-4 text-white pb-2">
-              <div id="codeSkill">
-                <img style="width: 4.3rem" src="./icons/Shopify-Emblem.png" />
-                <h1 class="fs-5 text-white">Shopify</h1>
-              </div>
-            </li>
-          </ul>
-          <label class="fs-5" for="display" id="less">See Less</label>
+          <ul id="skillList"></ul>
+          <div id="pagination"></div>
         </div>
       </div>
     </section>
@@ -243,7 +153,7 @@
             mechanism for improved performance and user experience.
           </p>
           <img id="icon" src="./icons/Angular.png" />
-          <img id="icon" src="./icons/Typescript_logo_2020.svg.png" />
+          <img id="icon" src="./icons/Typescript.png" />
           <img src="./icons/tailwind.png" id="icon" />
           <img src="./icons/sass.png" id="icon" />
           <div id="sites">
@@ -297,10 +207,7 @@
             keyboard controls, enhancing user interaction. The entire design was
             crafted using SASS (SCSS) to ensure seamless and efficient styling.
           </p>
-          <img
-            id="icon"
-            src="./icons/jquery-1-logo-png-transparent-1024x232.png"
-          />
+          <img id="icon" src="./icons/jquery.png" />
           <img id="icon" src="./icons/sass.png" />
           <div id="sites">
             <button class="btn bg-secondary mx-3" onclick="github('bmw')">
@@ -476,13 +383,128 @@
       const resume = () => window.open("icons/CV.pdf");
     </script>
     <script>
+      const skills = [
+        {
+          name: "HTML5",
+          img: "icons/html5.png",
+        },
+        {
+          name: "CSS3",
+          img: "icons/css3.png",
+        },
+        {
+          name: "JavaScript",
+          img: "icons/js.png",
+        },
+        {
+          name: "TypeScript",
+          img: "icons/Typescript.png",
+        },
+        {
+          name: "jQuery",
+          img: "icons/jquery.png",
+        },
+        {
+          name: "SASS & SCSS",
+          img: "icons/sass.png",
+        },
+        {
+          name: "Angular",
+          img: "icons/angular.png",
+        },
+        {
+          name: "React",
+          img: "icons/favicon.ico",
+        },
+        {
+          name: "Vue.js",
+          img: "icons/vue.png",
+        },
+        {
+          name: "Tailwind CSS",
+          img: "icons/tailwind.png",
+        },
+        {
+          name: "Bootstrap",
+          img: "icons/bootstrap.png",
+        },
+        {
+          name: "Git",
+          img: "icons/git.png",
+        },
+        {
+          name: "MySQL",
+          img: "icons/mysql.png",
+        },
+        {
+          name: "Docker",
+          img: "icons/docker.png",
+        },
+        {
+          name: "Cypress.io",
+          img: "icons/cypress.png",
+        },
+        {
+          name: "WordPress",
+          img: "icons/R.png",
+        },
+        {
+          name: "Shopify",
+          img: "icons/shopify.png",
+        },
+      ];
+
+      let itemsPerPage = 9;
+      let currentPage = 1;
+      const skillList = skills.map((skill) => skill);
+      const list = document.getElementById("skillList");
+      const Paginate = document.getElementById("pagination");
+
+      function displayPage(pageNumber) {
+        list.innerHTML = "";
+        var startIndex = (pageNumber - 1) * itemsPerPage;
+        var endIndex = startIndex + itemsPerPage;
+
+        for (var i = startIndex; i < endIndex && i < skillList.length; i++) {
+          var li = document.createElement("li");
+          var text = document.createElement("p");
+          var img = document.createElement("img");
+          img.src = skillList[i].img;
+          text.textContent = skillList[i].name;
+          list.appendChild(li);
+          li.appendChild(img);
+          li.appendChild(text);
+        }
+      }
+
+      function updatePagination() {
+        Paginate.innerHTML = "";
+
+        var totalPages = Math.ceil(skillList.length / itemsPerPage);
+        for (var i = 1; i <= totalPages; i++) {
+          var button = document.createElement("button");
+          button.textContent = i;
+          button.addEventListener("click", function () {
+            currentPage = parseInt(this.textContent);
+            displayPage(currentPage);
+          });
+          Paginate.appendChild(button);
+        }
+      }
+
+      displayPage(currentPage);
+      updatePagination();
+    </script>
+    <script>
       gsap.registerPlugin(ScrollTrigger);
-      const timeline = gsap.timeline({ defaults: { ease: "smooth" } });
+      const timeline = gsap.timeline({
+        defaults: { duration: 1, ease: "smooth" },
+      });
       timeline
-        .from("#profile", { duration: 1, opacity: 0 })
-        .from("#skillSection", { duration: 1, opacity: 0, x: "-100%" })
-        .from("#codeSkill", { duration: 1, opacity: 0 })
-        .to("#moreInfo", { duration: 0.5, y: "-200%", opacity: 1 });
+        .from("#profile", { opacity: 0 })
+        .from("#skillSection", { opacity: 0, x: "-100%" })
+        .from("#moreInfo button", { scale: 0, stagger: 1 })
+        .from("#skillList li", { scale: 0, stagger: 0.5 }, "<");
 
       const pvElements = document.querySelectorAll("#pv");
       const pdElements = document.querySelectorAll("#pd");
@@ -491,11 +513,11 @@
           .timeline({
             scrollTrigger: {
               trigger: pvElement,
-              start: "top center",
+              start: "top bottom",
               end: "bottom center",
             },
           })
-          .from(pvElement, { duration: 1, opacity: 0, x: "100%" });
+          .from(pvElement, { duration: 1, opacity: 0, scale: 0 });
       });
       pdElements.forEach((pdElement) => {
         gsap
@@ -506,7 +528,7 @@
               end: "bottom center",
             },
           })
-          .from(pdElement, { duration: 1.2, opacity: 0 });
+          .from(pdElement, { duration: 1.2, opacity: 0, x: "-100%" });
       });
       gsap
         .timeline({
@@ -517,6 +539,19 @@
           },
         })
         .from("#projectsTitle", { duration: 1, opacity: 0 });
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#projectsTitle",
+            start: "top bottom",
+            end: "bottom center",
+          },
+        })
+        .to("#projectsTitle", {
+          duration: 1,
+          opacity: 0.5,
+        });
     </script>
   </body>
 </html>
