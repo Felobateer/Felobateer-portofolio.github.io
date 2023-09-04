@@ -55,6 +55,35 @@
     ></script>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid mx-auto" style="width: 90%; height: 5rem">
+        <a class="navbar-brand" href="#about">
+          <img src="icons/FSIcon.PNG" alt="FS" width="75px" height="75px" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="fill: whitesmoke"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="width: fit-content; margin-left: auto">
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5 text-white" href="#projects">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <section id="about">
       <div
         id="aboutMe"
@@ -518,7 +547,8 @@
         .from("#profile", { opacity: 0 })
         .from("#skillSection", { opacity: 0, x: "-100%" })
         .from("#moreInfo button", { scale: 0, stagger: 1 })
-        .from("#skillList li", { scale: 0, stagger: 0.5 }, "<");
+        .from("#skillList li", { scale: 0, stagger: 0.5 }, "<")
+        .from("nav div", { opacity: 0 }, "<");
 
       const pvElements = document.querySelectorAll("#pv");
       const pdElements = document.querySelectorAll("#pd");
