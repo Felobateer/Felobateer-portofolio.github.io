@@ -84,6 +84,17 @@
       </div>
     </nav>
 
+    <div id="svg">
+      <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="25" cy="25" r="20" fill="#C6C3C9" id="svg-background" />
+        <polygon points="25,10 22.5,25 27.5,25" fill="white" id="ray" />
+        <polygon points="25,40 22.5,25 27.5,25" fill="white" id="ray" />
+        <polygon points="15,25 25,22.5 25,27.5" fill="white" id="ray" />
+        <polygon points="35,25 25,22.5 25,27.5" fill="white" id="ray" />
+        <circle cx="25" cy="25" r="3" fill="#E7E6EB" id="svg-center" />
+      </svg>
+    </div>
+
     <section id="about">
       <div
         id="aboutMe"
@@ -548,6 +559,13 @@
         .from("#skillSection", { opacity: 0, x: "-100%" })
         .from("#moreInfo button", { scale: 0, stagger: 1 })
         .from("#skillList li", { scale: 0, stagger: 0.5 }, "<")
+        .fromTo(
+          "svg",
+          { x: "-100%", opacity: 0.5 },
+          { x: "100%", opacity: 1, duration: 1.5 },
+          "<1.5"
+        )
+        .from("#ray", { opacity: 0, duration: 0.5 }, "<")
         .from("nav div", { opacity: 0 }, "<");
 
       const pvElements = document.querySelectorAll("#pv");
