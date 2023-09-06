@@ -63,13 +63,14 @@
         <button
           class="navbar-toggler"
           type="button"
+          id="navButton"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" style="fill: whitesmoke"></span>
+          <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav" style="width: fit-content; margin-left: auto">
@@ -183,14 +184,20 @@
           <p class="fs-5 p-4 text">
             I developed this website using Angular 16, skillfully incorporating
             various features and technologies to enhance its functionality. The
-            implementation includes router navigation, reactive forms for
-            seamless user input, HTTP services for API integration, and
-            integration of Highcharts for data visualization. I utilized
-            ngx-pagination and RxJS for efficient data handling and employed
-            injectables for enhanced modularity. Additionally, I ensured optimal
-            styling with Tailwind and SCSS, providing a visually appealing and
-            responsive user interface. The website also features a cache storing
-            mechanism for improved performance and user experience.
+            implementation includes
+            <span class="highlight">
+              router navigation, reactive forms for seamless user input, HTTP
+              services for API integration, and integration of Highcharts for
+              data visualization.
+            </span>
+            I utilized
+            <span class="highlight"> ngx-pagination and RxJS </span> for
+            efficient data handling and employed injectables for enhanced
+            modularity. Additionally, I ensured optimal styling with
+            <span class="highlight"> Tailwind and SCSS </span>, providing a
+            visually appealing and responsive user interface. The website also
+            features a cache storing mechanism for improved performance and user
+            experience.
           </p>
           <img id="icon" src="./icons/Angular.png" />
           <img id="icon" src="./icons/Typescript.png" />
@@ -243,9 +250,13 @@
             To showcase my expertise in crafting visually striking websites, I
             meticulously recreated the BMW homepage, infusing my own artistic
             touch by refining colors and fonts to create a stunning design.
-            Moreover, I exhibited my proficiency in jQuery by implementing
-            keyboard controls, enhancing user interaction. The entire design was
-            crafted using SASS (SCSS) to ensure seamless and efficient styling.
+            Moreover, I exhibited my proficiency in
+            <span class="highlight">
+              jQuery by implementing keyboard controls </span
+            >, enhancing user interaction. The entire design was crafted using
+            <span class="highlight">
+              SASS (SCSS) to ensure seamless and efficient styling.
+            </span>
           </p>
           <img id="icon" src="./icons/jquery.png" />
           <img id="icon" src="./icons/sass.png" />
@@ -286,13 +297,16 @@
 
           <p class="fs-5 p-4 text">
             I developed a sophisticated hotel booking website utilizing
-            React.js, integrating essential features such as routing and a
-            robust filtration system. With meticulous attention to design, I
-            implemented flexbox layouts throughout the website, ensuring
-            seamless responsiveness. The landing page showcases an appealing
-            carousel to captivate users. My commitment to crafting an
-            exceptional user experience is evident in the seamless navigation
-            and visually engaging design.
+            <span class="highlight"> React.js,</span> integrating essential
+            features such as
+            <span class="highlight">
+              routing and a robust filtration system.
+            </span>
+            With meticulous attention to design, I implemented flexbox layouts
+            throughout the website, ensuring seamless responsiveness. The
+            landing page showcases an appealing carousel to captivate users. My
+            commitment to crafting an exceptional user experience is evident in
+            the seamless navigation and visually engaging design.
           </p>
           <img id="icon" src="./icons/favicon.ico" />
           <img id="icon" src="./icons/bootstrap.png" />
@@ -336,14 +350,17 @@
             </div>
           </div>
           <p class="fs-5 p-4 text">
-            Sweet Market is a personalized shopping website curated around my
-            passion for sweets. Comprising five distinct pages, including the
-            landing, about, shop, registration, and cart pages, it offers a
-            seamless user experience. Leveraging Vue.js and Tailwind CSS, I
-            successfully implemented essential functionalities like user
-            authentication, cart management, and smooth routing. My dedication
-            to detail and user-centric design ensures a delightful shopping
-            experience for sweet enthusiasts.
+            Sweet Market is a personalized e-commerce curated around my passion
+            for sweets. Comprising five distinct pages, including the landing,
+            about, shop, registration, and cart pages, it offers a seamless user
+            experience. Leveraging
+            <span class="highlight"> Vue.js and Tailwind CSS,</span> I
+            successfully implemented essential functionalities like
+            <span class="highlight">
+              user authentication, cart management, and smooth routing.</span
+            >
+            My dedication to detail and user-centric design ensures a delightful
+            shopping experience for sweet enthusiasts.
           </p>
           <img id="icon" src="./icons/vue.png" />
           <img id="icon" src="./icons/tailwind.png" />
@@ -558,13 +575,8 @@
         .from("#profile", { opacity: 0 })
         .from("#skillSection", { opacity: 0, x: "-100%" })
         .from("#moreInfo button", { scale: 0, stagger: 1 })
-        .from("#skillList li", { scale: 0, stagger: 0.5 }, "<")
-        .fromTo(
-          "svg",
-          { x: "-100%", opacity: 0.5 },
-          { x: "100%", opacity: 1, duration: 1.5 },
-          "<1.5"
-        )
+        .from("#skillList li", { scale: 0, stagger: 0.2 }, "<")
+        .fromTo("svg", { x: "-100%" }, { x: "100%", duration: 1.7 }, "<2.5")
         .from("#ray", { opacity: 0, duration: 0.5 }, "<")
         .from("nav div", { opacity: 0 }, "<");
 

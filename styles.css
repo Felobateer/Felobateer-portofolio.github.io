@@ -6,6 +6,16 @@
   font-family: "Roboto Slab", serif;
 }
 
+#navButton {
+  border: 1px solid white;
+  padding: 0.6rem 0.8rem;
+  box-shadow: 0 0 5px whitesmoke;
+}
+
+#navButton i {
+  color: white;
+}
+
 #svg {
   background: #1a1c2b;
   width: 100%;
@@ -64,6 +74,10 @@ svg #svg-background {
 
 .text-darkwhitesmoke {
   color: rgb(121, 119, 119);
+}
+
+.highlight {
+  color: #8e6fe9;
 }
 
 .text {
