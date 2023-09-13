@@ -223,7 +223,7 @@ label {
   height: fit-content;
   margin: 2.5rem 11rem;
   border-radius: 25px;
-  box-shadow: 0 0 20px wheat;
+  box-shadow: 0 0 40px rgba(245, 222, 179, 0.2);
 }
 
 #projectPreview:hover {
