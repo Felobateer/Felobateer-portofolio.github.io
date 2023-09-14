@@ -479,14 +479,6 @@
           img: "icons/Typescript.png",
         },
         {
-          name: "Java",
-          img: "icons/java.png",
-        },
-        {
-          name: "python",
-          img: "icons/python.png",
-        },
-        {
           name: "Angular",
           img: "icons/angular.png",
         },
@@ -499,20 +491,16 @@
           img: "icons/vue.png",
         },
         {
-          name: "node.js",
-          img: "icons/node.png",
-        },
-        {
-          name: "express.js",
-          img: "icons/expressjs.png",
-        },
-        {
           name: "jQuery",
           img: "icons/jquery.png",
         },
         {
-          name: "SASS & SCSS",
-          img: "icons/sass.png",
+          name: "Java",
+          img: "icons/java.png",
+        },
+        {
+          name: "python",
+          img: "icons/python.png",
         },
         {
           name: "Tailwind CSS",
@@ -523,12 +511,24 @@
           img: "icons/bootstrap.png",
         },
         {
+          name: "node.js",
+          img: "icons/node.png",
+        },
+        {
+          name: "express.js",
+          img: "icons/expressjs.png",
+        },
+        {
           name: "Git",
           img: "icons/git.png",
         },
         {
           name: "MySQL",
           img: "icons/mysql.png",
+        },
+        {
+          name: "SASS & SCSS",
+          img: "icons/sass.png",
         },
         {
           name: "Docker",
@@ -548,7 +548,7 @@
         },
       ];
 
-      let itemsPerPage = 9;
+      let itemsPerPage = 12;
       let currentPage = 1;
       const skillList = skills.map((skill) => skill);
       const list = document.getElementById("skillList");
@@ -597,8 +597,8 @@
       timeline
         .from("#profile", { opacity: 0 })
         .from("#skillSection", { opacity: 0, x: "-100%" })
-        .from("#moreInfo button", { scale: 0, stagger: 1 })
-        .from("#skillList li", { scale: 0, stagger: 0.2 }, "<")
+
+        .from("#skillList li", { scale: 0, stagger: 0.15 })
         .fromTo("svg", { x: "-100%" }, { x: "100%", duration: 1.7 }, "<2.5")
         .from("#ray", { opacity: 0, duration: 0.5 }, "<")
         .from("nav div", { opacity: 0 }, "<");
