@@ -234,6 +234,16 @@ label {
   color: white;
 }
 
+footer {
+  box-shadow: 0 0 15px rgba(245, 245, 245, 0.4);
+}
+
+#footerContent {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 5rem 0 2rem 0;
+}
+
 @media (min-width: 2000px) {
   body {
     max-width: 1950px;
@@ -242,6 +252,10 @@ label {
   html {
     display: flex;
     justify-content: center;
+  }
+
+  footer {
+    box-shadow: none;
   }
 }
 
@@ -308,6 +322,10 @@ label {
 
   #skillSection {
     width: 90%;
+  }
+
+  #skillList {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #skillSection img {
