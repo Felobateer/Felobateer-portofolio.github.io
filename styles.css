@@ -110,14 +110,14 @@ svg #svg-background {
 }
 
 #skillSection {
-  width: 30rem;
+  width: 25rem;
   border-radius: 20px;
   box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
 }
 
 #skillList {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
