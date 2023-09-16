@@ -239,9 +239,43 @@ footer {
 }
 
 #footerContent {
-  width: fit-content;
+  width: 90%;
   margin: 0 auto;
   padding: 5rem 0 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#sendingEmail {
+  margin-left: auto;
+  width: 100%;
+}
+
+#sendingEmail form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+#sendingEmail form input,
+textarea {
+  background-color: rgba(245, 245, 245, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  width: 90%;
+}
+
+#sendingEmail form input:last-of-type {
+  margin-left: auto;
+  margin-right: 10%;
+  width: 20%;
+}
+
+#sendingEmail form input:last-of-type:hover {
+  background-color: rgba(245, 245, 245, 0.9);
 }
 
 @media (min-width: 2000px) {
@@ -352,5 +386,13 @@ footer {
     width: 20rem;
     height: fit-content;
     margin: 0 25px;
+  }
+
+  #footerContent {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #sendingEmail form input:last-of-type {
+    width: 30%;
   }
 }

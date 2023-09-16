@@ -10,7 +10,7 @@ email.use(cors());
 email.use(bodyParser.urlencoded({ extended: false }));
 email.use(bodyParser.json());
 
-email.post("/", async (req, res) => {
+email.post("/api", async (req, res) => {
   const sender = req.body.sender;
   const text = req.body.text;
 
@@ -41,5 +41,7 @@ email.post("/", async (req, res) => {
 });
 
 email.listen(port, () =>
-  console.log(`Server is running on https://felobateer-saadalla.netlify.app/`)
+  console.log(
+    `Server is running on https://felobateer-saadalla.netlify.app/api`
+  )
 );
