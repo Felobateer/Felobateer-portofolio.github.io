@@ -43,6 +43,6 @@ email.post("/", async (req, res) => {
   });
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 
 email.listen(port, () => console.log(`Server is running on port ${port}`));
