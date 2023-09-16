@@ -4,9 +4,12 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 
 const email = express();
-const port = 3000;
 
-email.use(cors());
+email.use(
+  cors({
+    origin: "https://felobateer-saadalla.netlify.app/",
+  })
+);
 email.use(bodyParser.urlencoded({ extended: false }));
 email.use(bodyParser.json());
 
@@ -40,8 +43,6 @@ email.post("/api", async (req, res) => {
   });
 });
 
-email.listen(port, () =>
-  console.log(
-    `Server is running on https://felobateer-saadalla.netlify.app/api`
-  )
-);
+const port = process.env.PORT || 3000;
+
+email.listen(port, () => console.log(`Server is running on port ${port}`));
