@@ -409,19 +409,37 @@
 
     <footer>
       <div id="footerContent">
-        <div class="text-gradient fs-4">Feel free to contact me via:</div>
-        <h1 class="fs-4 text-darkwhitesmoke">
-          <span class="fas fa-envelope"></span>
-          felobateersaadalla@gmail.com
-        </h1>
-        <h1 class="fs-4 text-darkwhitesmoke">
-          <span class="fas fa-phone"></span>
-          +49 151 101 70902
-        </h1>
-        <h1 class="fs-4 text-darkwhitesmoke">
-          <i class="fa-brands fa-whatsapp"></i>
-          +49 151 101 70902
-        </h1>
+        <div>
+          <div class="text-gradient fs-4">Feel free to contact me via:</div>
+          <h1 class="fs-4 text-darkwhitesmoke">
+            <span class="fas fa-envelope"></span>
+            felobateersaadalla@gmail.com
+          </h1>
+          <h1 class="fs-4 text-darkwhitesmoke">
+            <span class="fas fa-phone"></span>
+            +49 151 101 70902
+          </h1>
+          <h1 class="fs-4 text-darkwhitesmoke">
+            <i class="fa-brands fa-whatsapp"></i>
+            +49 151 101 70902
+          </h1>
+        </div>
+        <div id="sendingEmail">
+          <div class="text-gradient fs-4">Or send me a message here:</div>
+          <form
+            action="https://felobateer-saadalla.netlify.app/api"
+            method="POST"
+            id="emailForm"
+          >
+            <label for="sender">Sender's Email:</label>
+            <input type="email" id="sender" name="sender" required />
+            <br />
+            <label for="message">Email Message:</label>
+            <textarea id="message" name="text" rows="4" required></textarea>
+            <br />
+            <input type="submit" value="Send Email" />
+          </form>
+        </div>
       </div>
       <div class="text-gradient mx-auto pb-3 fs-6">
         &copy; 2023 felobateer Saadalla
@@ -637,6 +655,35 @@
         .to("#projectsTitle", {
           duration: 1,
           opacity: 0.5,
+        });
+    </script>
+    <script>
+      document
+        .getElementById("emailForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const sender = document.getElementById("sender").value;
+          const text = document.getElementById("message").value;
+
+          fetch("https://felobateer-saadalla.netlify.app/api", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ sender, text }),
+          })
+            .then((response) => {
+              if (response.ok) {
+                alert("Email sent successfully");
+              } else {
+                alert("Email not sent. Please try again later.");
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+              alert("Email not sent. Please try again later.");
+            });
         });
     </script>
   </body>
