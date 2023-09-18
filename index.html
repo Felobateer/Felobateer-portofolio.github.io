@@ -427,7 +427,7 @@
         <div id="sendingEmail">
           <div class="text-gradient fs-4">Or send me a message here:</div>
           <form
-            action="https://felobateer-saadalla.netlify.app:4000/"
+            action="https://felobateer-emailsender.azurewebsites.net/"
             method="POST"
             id="emailForm"
           >
@@ -677,7 +677,7 @@
           const sender = document.getElementById("sender").value;
           const text = document.getElementById("message").value;
 
-          fetch("https://felobateer-saadalla.netlify.app:4000/", {
+          fetch("https://felobateer-emailsender.azurewebsites.net/", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
