@@ -4,9 +4,8 @@ const timeline = gsap.timeline({
 });
 timeline
   .from("#profile", { opacity: 0 })
-  .from("#skillSection", { opacity: 0, x: "-100%" })
-
-  .from("#skillList li", { scale: 0, stagger: 0.15 })
+  .from("#skillSection", { scale: 0, x: "-100%" })
+  .from("#skillList li", { opacity: 0, stagger: 0.15 })
   .fromTo("svg", { x: "-100%" }, { x: "100%", duration: 1.7 }, "<2.5")
   .from("#ray", { opacity: 0, duration: 0.5 }, "<")
   .from("nav div", { opacity: 0 }, "<");
