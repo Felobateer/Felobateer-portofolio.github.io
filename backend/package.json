@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node email.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felobateer/Felobateer.github.io.git"
+  },
+  "keywords": [
+    "Email"
+  ],
+  "author": "Felo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Felobateer/Felobateer.github.io/issues"
+  },
+  "homepage": "https://github.com/Felobateer/Felobateer.github.io#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
+  }
+}
