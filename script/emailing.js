@@ -6,7 +6,7 @@ document
     const sender = document.getElementById("sender").value;
     const text = document.getElementById("message").value;
 
-    fetch("https://felobateer-saadalla.netlify.app/api", {
+    fetch("https://portfolio-page-0vo3.onrender.com/api", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
