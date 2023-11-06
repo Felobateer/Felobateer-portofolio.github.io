@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Slab", serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 #navButton {
@@ -64,7 +64,7 @@ svg #svg-background {
   height: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
@@ -75,7 +75,7 @@ svg #svg-background {
   height: fit-content;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: "Lisu Bosa", serif;
+  font-family: "Inter", sans-serif;
   font-weight: bold;
 }
 
