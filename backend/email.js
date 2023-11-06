@@ -23,7 +23,7 @@ email.post("/api", async (req, res) => {
     service: "gmail",
     auth: {
       user: "felobateersaadalla@gmail.com",
-      pass: "fyffcpksehqipiig",
+      pass: "jlcd ghol aagh wktd",
     },
   });
 
