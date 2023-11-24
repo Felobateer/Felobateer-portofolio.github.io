@@ -89,7 +89,8 @@ svg #svg-background {
 }
 
 .highlight {
-  color: #8e6fe9;
+  /* color: #8e6fe9; */
+  color: dodgerblue;
 }
 
 .text {
