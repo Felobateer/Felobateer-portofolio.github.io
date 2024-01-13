@@ -28,6 +28,14 @@ const skills = [
     img: "icons/vue.png",
   },
   {
+    name: "node.js",
+    img: "icons/node.png",
+  },
+  {
+    name: "express.js",
+    img: "icons/expressjs.png",
+  },
+  {
     name: "SASS & SCSS",
     img: "icons/sass.png",
   },
@@ -38,14 +46,6 @@ const skills = [
   {
     name: "Bootstrap",
     img: "icons/bootstrap.png",
-  },
-  {
-    name: "node.js",
-    img: "icons/node.png",
-  },
-  {
-    name: "express.js",
-    img: "icons/expressjs.png",
   },
   {
     name: "Git",
