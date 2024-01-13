@@ -16,12 +16,12 @@ const skills = [
     img: "icons/Typescript.png",
   },
   {
-    name: "Angular",
-    img: "icons/angular.png",
-  },
-  {
     name: "React",
     img: "icons/favicon.ico",
+  },
+  {
+    name: "Angular",
+    img: "icons/angular.png",
   },
   {
     name: "Vue.js",
