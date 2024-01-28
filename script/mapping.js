@@ -16,6 +16,14 @@ const skills = [
     img: "icons/Typescript.png",
   },
   {
+    name: "Java",
+    img: "icons/java.png",
+  },
+  {
+    name: "python",
+    img: "icons/python.png",
+  },
+  {
     name: "React",
     img: "icons/favicon.ico",
   },
