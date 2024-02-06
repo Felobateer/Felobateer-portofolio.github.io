@@ -102,6 +102,90 @@ svg #svg-background {
   border-radius: 20px;
   width: 85%;
   box-shadow: 0 0 3rem rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+.fiverr {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.check-gigs-btn {
+  -webkit-font-smoothing: antialiased;
+  -webkit-writing-mode: horizontal-tb;
+  background-image: linear-gradient(rgb(53, 195, 80), rgb(3, 181, 37));
+  border-bottom-color: rgb(1, 159, 41);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(1, 159, 41);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(1, 159, 41);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(1, 159, 41);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 29px;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 1px;
+  width: 150px;
+  margin-top: 2px;
+  margin: auto;
+}
+
+.fiverr-layer-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fiverr-layer-one img {
+  width: 180px;
+  height: 150px;
+  overflow: hidden;
+  position: center;
+  align-self: center;
+}
+
+.fiverr-layer-one p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.fiverr-layer-one p:first-of-type {
+  margin-top: 40px;
+}
+
+.fiverr-layer-two {
+  position: absolute;
+  width: 100%;
+  height: 270px;
+  display: flex;
+  background: transparent;
+}
+
+.fiverr-layer-two img {
+  margin: auto;
+  background: transparent;
+  width: 76px;
+  height: 76px;
+  margin-top: 62%;
 }
 
 #moreInfo {
@@ -362,6 +446,14 @@ textarea {
 
   #fullProfile {
     width: 100%;
+  }
+
+  #profile {
+    grid-template-columns: auto;
+  }
+
+  .fiverr-layer-two img {
+    margin-top: 35%;
   }
 
   #skillSection {
