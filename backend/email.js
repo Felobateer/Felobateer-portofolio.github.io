@@ -7,8 +7,8 @@ const email = express();
 
 const allowedOrigins = [
   "https://felobateer-saadalla.netlify.app",
-  "http://127.0.0.1:5500/index.html",
-  "https://psaadalla.com/",
+  "http://127.0.0.1:5500",
+  "https://psaadalla.com",
 ];
 
 email.use(
