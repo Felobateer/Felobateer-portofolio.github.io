@@ -1,3 +1,6 @@
+const url_1 = "https://psaadalla.com/backend/api";
+const url_2 = "https://portfolio-page-0vo3.onrender.com/api";
+
 document
   .getElementById("emailForm")
   .addEventListener("submit", function (event) {
@@ -6,7 +9,7 @@ document
     const sender = document.getElementById("sender").value;
     const text = document.getElementById("message").value;
 
-    fetch("https://portfolio-page-0vo3.onrender.com/api", {
+    fetch(url_1, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

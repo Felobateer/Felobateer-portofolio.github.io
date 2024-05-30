@@ -5,7 +5,11 @@ const cors = require("cors");
 
 const email = express();
 
-const allowedOrigins = ["https://felobateer-saadalla.netlify.app"];
+const allowedOrigins = [
+  "https://felobateer-saadalla.netlify.app",
+  "http://127.0.0.1:5500/index.html",
+  "https://psaadalla.com/",
+];
 
 email.use(
   cors({
