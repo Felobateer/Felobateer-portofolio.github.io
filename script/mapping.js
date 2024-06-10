@@ -29,7 +29,7 @@ const skills = [
   },
   {
     name: "Angular",
-    img: "icons/angular.png",
+    img: "icons/Angular.png",
   },
   {
     name: "Vue.js",

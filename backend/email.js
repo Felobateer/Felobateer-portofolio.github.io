@@ -49,6 +49,6 @@ email.post("/api", async (req, res) => {
   });
 });
 
-const port = process.env.port || 3000;
+const port = "https://psaadalla.com/backend" || 3000;
 
 email.listen(port, () => console.log(`Server is running on port ${port}`));
