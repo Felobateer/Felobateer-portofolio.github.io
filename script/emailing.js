@@ -1,4 +1,4 @@
-const url_1 = "https://psaadalla.com/backend/api";
+const url_1 = "https://apiservices.psaadalla.com/api";
 const url_2 = "https://portfolio-page-0vo3.onrender.com/api";
 
 document
