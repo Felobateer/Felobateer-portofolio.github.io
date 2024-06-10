@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require("dotenv").config();
 
 const email = express();
 
@@ -26,8 +27,8 @@ email.post("/api", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "felobateersaadalla@gmail.com",
-      pass: "jlcd ghol aagh wktd",
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
   });
 
@@ -49,6 +50,6 @@ email.post("/api", async (req, res) => {
   });
 });
 
-const port = "https://psaadalla.com/backend" || 3000;
+const port = process.env.PORT || 3000;
 
 email.listen(port, () => console.log(`Server is running on port ${port}`));
